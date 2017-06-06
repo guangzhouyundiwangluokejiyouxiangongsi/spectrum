@@ -1,5 +1,5 @@
 <?php
-ini_set('session.cookie_domain', ".yundi88.com");
+// ini_set('session.cookie_domain', ".yundi88.com");
 return array(
 	//'配置项'=>'配置值'
     'MODULE_ALLOW_LIST'    =>    array('Home','Admin','Upadmin'),     // 允许访问的模块
@@ -15,7 +15,7 @@ return array(
     'DB_HOST'               =>  'localhost', // 服务器地址
     'DB_NAME'               =>  'baike',   // 数据库名
     'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'sld%d35kd*7kkd%',          // 密码
+    'DB_PWD'                =>  '',          // 密码
     'DB_PORT'               =>  '3306',      // 端口
     'DB_PREFIX'             =>  'yd_',     // 数据库表前缀
 
@@ -24,10 +24,10 @@ return array(
     'DOMAIN'          =>'www.yundi88.com',
     'DB_CONFIG2' => array(
         'DB_TYPE' => 'mysql', //数据库类型
-        'DB_HOST' => '119.23.36.25', //数据库主机
-        'DB_NAME' => 'yundi88_com', //数据库名称
+        'DB_HOST' => 'localhost', //数据库主机
+        'DB_NAME' => 'b2b_tpshop', //数据库名称
         'DB_USER' => 'root', //数据库用户名
-        'DB_PWD' => 'd$js*pwjq&qpj@', //数据库密码
+        'DB_PWD' => '', //数据库密码
         'DB_PORT' => '3306', //数据库端口
         'DB_PREFIX' => 'yd_', //数据库前缀
         'DB_CHARSET' => 'utf8', // 字符集
