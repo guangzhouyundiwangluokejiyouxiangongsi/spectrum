@@ -1,0 +1,33 @@
+
+.y_content{margin: 0.741rem auto 0.833rem;background: #e4e5e9;}
+.y_content .y_banner img{width: 100%;display: block;}
+/*行业分类*/
+.y_content .y_message{padding: 0.2526rem 0.1684rem;}
+.y_content .y_message .y_title{line-height: 0.3031rem;height: 0.3032rem;border-left:0.0842rem solid #2196f3;overflow: hidden;}
+.y_content .y_message .y_title span{font-size: 0.2526rem;color: #252525;margin-left: 0.1684rem;float: left}
+.y_content .y_message .y_title a{background: url(../img/more_bg2.png) no-repeat right center ;display: block;float: right;color: #2196f3;font-size: 0.2021rem;padding-right: 0.2358rem;  background-size: auto 68%; }
+
+.y_content .y_message li {height: 1.6842rem;padding:0 0.1684rem 0 2.4757rem;overflow: hidden;margin-top:0.2021rem;background: #fff;}
+.y_content .y_message li .img{display:block;margin-left: -2.4757rem;height: 1.6842rem;width: 2.3578rem;overflow: hidden;float: left;}
+.y_content .y_message li .img img{width: 100%;}
+.y_content .y_message li .txt{padding: 0.1684rem 0;}
+.y_content .y_message li h3{font-size: 0.2189rem;color: #333333;line-height: 0.3368rem;height: 0.3368rem;overflow: hidden;font-weight: normal;}
+.y_content .y_message li p{font-size: 0.2021rem;color: #999999;line-height: 0.3032rem;height: 0.6063rem
+;overflow: hidden;}
+.y_content .y_message li span{font-size: 0.2021rem;color: #999999;line-height: 0.3032rem;float: right;}
+
+.y_content .y_message .company li p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+
+.y_content .y_bottom{padding: 0.2863rem 0;}
+.y_content .y_bottom p{color: #999999;font-size:  0.2021rem;text-align: center;line-height: 0.3031rem;}
+
+
+
+
+
+
+
+
+
+
+

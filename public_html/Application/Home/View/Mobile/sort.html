@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/Public/img/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />  
+	<title>云谱行业分类</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/sort.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/landscape.css">
+	<include file="header" />
+	
+	<div class="y_content">
+		<!-- 分类 -->
+		<ul>
+			<foreach name="sort" item="vv">
+			<li>
+				<a href="/Mobile/sort_cat?sc_id={$vv.sc_id}">
+					<div class="sort_name">
+						{$vv.sc_name}
+					</div>
+					<div class="right_icon"><img src="__PUBLIC__/mobile/img/sort_right.png"></div>
+				</a>
+			</li>
+			</foreach>
+		</ul>
+
+
+		<include file="footer" />
+</html>

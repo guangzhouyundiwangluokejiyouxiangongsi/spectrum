@@ -1,0 +1,697 @@
+[ 2017-05-08T17:56:50+08:00 ] 218.19.99.118 /upadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-05-08T17:56:50+08:00 ] 218.19.99.118 /upadmin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-05-08T17:56:50+08:00 ] 218.19.99.118 /Upadmin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-08T17:58:33+08:00 ] 218.19.99.118 /upadmin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-05-08T17:58:33+08:00 ] 218.19.99.118 /Upadmin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-05-08T17:58:47+08:00 ] 218.19.99.118 /upadmin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+
+[ 2017-05-08T18:01:31+08:00 ] 218.19.99.118 /upadmin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_admin` WHERE `admin` = 'admin' AND `password` = '2efaef77b86d68ef7998de1b4af9d3bb' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+NOTIC: [8] Use of undefined constant yzm - assumed 'yzm' /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/97280386580f9501793336ede196af79.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-05-08T18:01:31+08:00 ] 218.19.99.118 /upadmin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-05-08T18:01:31+08:00 ] 218.19.99.118 /upadmin/index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-05-08T18:01:35+08:00 ] 218.19.99.118 /Upadmin/Web/navigation_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `yd_navigation` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_navigation` ORDER BY orderid  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-05-08T18:01:35+08:00 ] 218.19.99.118 /Upadmin/Web/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2017-05-08T18:01:36+08:00 ] 218.19.99.118 /Upadmin/Web/shuffling_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `yd_shuffling` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yd_shuffling` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_shuffling` ORDER BY orderid  [ RunTime:0.0002s ]
+SQL: SELECT `img_cat` FROM `yd_shuffling` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `img_cat` FROM `yd_shuffling` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `img_cat` FROM `yd_shuffling` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `img_cat` FROM `yd_shuffling` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `img_cat` FROM `yd_shuffling` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+NOTIC: [8] Undefined index: navigation /mnt/web/association/public_html/Application/Runtime/Cache/Upadmin/20b05181584ce0139e3cd2258dc17e36.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-05-08T18:01:38+08:00 ] 218.19.99.118 /Upadmin/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_admin`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-05-08T18:01:38+08:00 ] 218.19.99.118 /Upadmin/Admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2017-05-08T21:07:01+08:00 ] 218.19.99.118 /upadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-05-08T21:07:06+08:00 ] 218.19.99.118 /Upadmin/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_admin`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-05-08T21:07:54+08:00 ] 218.19.99.118 /Upadmin/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_admin`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-05-08T21:07:57+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:23+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:24+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:24+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:24+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:24+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:08:24+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:10:04+08:00 ] 218.19.99.118 /Upadmin/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_admin`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-05-08T21:10:05+08:00 ] 218.19.99.118 /Upadmin/Admin/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `yd_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_admin`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-05-08T21:10:08+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:10:32+08:00 ] 218.19.99.118 /Upadmin/User/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 非法操作:index
+
+[ 2017-05-08T21:11:02+08:00 ] 218.19.99.118 /Upadmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-05-08T21:11:04+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:11:28+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-05-08T21:11:44+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:11:45+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:11:45+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:11:45+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:11:45+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:10+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:10+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:10+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0009s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:11+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:11+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:11+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:11+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:11+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:12+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:12+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:12+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:13+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:13+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:14+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+
+[ 2017-05-08T21:12:14+08:00 ] 218.19.99.118 /Upadmin/User/User_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT `com_id`,`com_storeid`,`com_url`,`com_name`,`com_province`,`com_city`,`com_district`,`com_detailed`,`com_visit`,`com_praise`,`com_time` FROM `yd_company_info`  [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Upadmin/View/User/User_list.html
+

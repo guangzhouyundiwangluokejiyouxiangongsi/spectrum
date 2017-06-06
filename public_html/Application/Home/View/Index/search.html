@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<link rel="shortcut icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon" />
+	<title>{$system.title}</title>
+	<meta http-equiv="keywords" content="{$system.guanjianci}" />
+	<meta name="description" content="{$system.miaoshu}" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/baike.css">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/MxSlider.css">
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/benner.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/scroll_image.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/MxSlider.js"></script>
+</head>
+<include file="Public/header" />
+<style type="text/css">
+	.yp_list{width: 1200px;margin: 0 auto;}
+	.yp_list .list_message{margin: 30px 0;}
+	.yp_list .list_message li{list-style: none;overflow: hidden;font-family: "微软雅黑";margin-bottom: 16px;}
+	.yp_list .list_message .list_img{width: 220px ;height:150px;float: left;}
+	.yp_list .list_message .list_img img{width: 100%;}
+	.yp_list .list_message .list_txt a{display: block;text-decoration: none;}
+	.yp_list .list_message .list_txt{float: left;padding: 12px 24px 12px 16px;border: 1px solid #eeeeee;border-left: none;width: 898px;height: 124px;}
+	.yp_list .list_message .list_txt .com_name{font-size: 16px;color: #333333;line-height: 28px;}
+	.yp_list .list_message .list_txt .com_name:hover{color: #008cba;}
+	.yp_list .list_message .list_txt .com_abstract{font-size: 12px;color: #666666;line-height: 18px;height: 36px;overflow: hidden;}
+	.yp_list .list_message .list_txt .main_pro{font-size: 14px;color: #333333;line-height: 26px;}
+	.yp_list .list_message .list_txt .pro_abstract{font-size: 12px;color: #666666;line-height: 18px;height: 18px;overflow: hidden;}
+	.yp_list .list_message .list_txt .com_add{font-size: 12px;color: #0066cc;}
+	.yp_list .list_message .list_txt .com_add:hover{color: #f22e00;text-decoration: underline;}
+</style>
+<body>
+	<div class="yp_list">
+		<ul class="list_message">
+		<!-- <p>搜索结果</p><br> -->
+			<empty name="company_info">
+			<p style="text-align: center;font-size: 20px;color: red;margin: 150px 0 150px 0;">没有找到相关内容</p>
+			</empty>
+			<foreach name="company_info" item="com">
+			<li>
+				<div class="list_img">
+					<img src="{:templogo($com['com_storeid'],220,150)}">
+				</div>
+				<div class="list_txt">
+					<a href="{:U('/CompanyInfo/details',[id=>$com['com_id']])}" class="com_name">{$com['com_name']}</a>
+					<a href="{:U('/CompanyInfo/details',[id=>$com['com_id']])}" class="com_abstract ">{$com['com_synopsis']}</a>
+					<a href="{:U('/CompanyInfo/details',[id=>$com['com_id']])}" class="main_pro">主营产品</a>
+					<a href="{:U('/CompanyInfo/details',[id=>$com['com_id']])}" class="pro_abstract">{$com['com_scname']}</a>
+					<a href="http://{$com['com_url'][0]}" class="com_add">{$com['com_url'][0]}</a>
+				</div>
+			</li>
+			</foreach>
+		</ul>
+		<div>{$page}</div>
+	</div>
+<include file="Public/footer" />
+</body>
+</html>

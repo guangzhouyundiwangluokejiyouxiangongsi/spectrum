@@ -1,0 +1,103 @@
+[ 2017-05-13T05:38:03+08:00 ] 140.205.201.39 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-05-13T10:47:32+08:00 ] 101.226.33.221 /admin/index/tindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-05-13T15:49:05+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 712 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-05-13T15:49:23+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 712 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: com_scname /mnt/web/spectrum/public_html/Application/Admin/Model/CompanyInfoModel.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 712  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: com_status /mnt/web/spectrum/public_html/Application/Admin/Controller/CompanyInfoController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: com_id /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 93 行.
+NOTIC: [8] Undefined index: com_name /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 97 行.
+NOTIC: [8] Undefined index: com_logo /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 144 行.
+NOTIC: [8] Undefined index: com_province /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 164 行.
+NOTIC: [8] Undefined index: com_city /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 169 行.
+NOTIC: [8] Undefined index: com_district /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 173 行.
+NOTIC: [8] Undefined index: com_detailed /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 176 行.
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+NOTIC: [8] Undefined index: com_synopsis /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 282 行.
+NOTIC: [8] Undefined index: com_history /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 299 行.
+NOTIC: [8] Undefined index: com_service /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 318 行.
+NOTIC: [8] Undefined index: com_honor /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 335 行.
+NOTIC: [8] Undefined index: com_culture /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 351 行.
+NOTIC: [8] Undefined index: com_id /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-05-13T15:49:23+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 712  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: res /mnt/web/spectrum/public_html/Application/Admin/Controller/CompanyInfoController.class.php 第 59 行.
+
+[ 2017-05-13T15:49:23+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 712 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+

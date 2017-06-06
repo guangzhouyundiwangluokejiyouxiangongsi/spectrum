@@ -1,0 +1,77 @@
+[ 2017-05-18T10:31:41+08:00 ] 119.130.230.84 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 622 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `yd_audit` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_audit` WHERE `com_id` = 67 AND `status` = 2 ORDER BY addtime desc LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-05-18T10:31:47+08:00 ] 119.130.230.84 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 622 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 622  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2017-05-18T10:31:47+08:00 ] 119.130.230.84 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 622  [ RunTime:0.0002s ]
+
+[ 2017-05-18T10:31:47+08:00 ] 119.130.230.84 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 622 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-18T10:48:44+08:00 ] 119.130.230.84 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+

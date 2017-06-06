@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>云狄百科</title>
+    <load href="__PUBLIC__/Common/jquery-2.1.3.min.js" />
+    <load href="__PUBLIC__/Common/bootstrap.min.js" />
+    <load href="__PUBLIC__/Common/bootstrap.min.css" />
+    <load href="__PUBLIC__/ueditor/utf8-php/ueditor.config.js"/>
+    <load href="__PUBLIC__/ueditor/utf8-php/ueditor.all.min.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.data.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/main.js"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <form action="" method="post" enctype="multipart/form-data" onsubmit="return onVerify()"> 
+                      <input type="hidden" name="com_id" value="{$company['com_id']}">
+                      <div class="form-group">
+                            <label for="exampleInputEmail1">公司名</label>
+                            <input type="text" class="form-control" id="com_name" placeholder="name" name="com_name" value="{$company['com_name']}">
+                      </div>
+       
+                      <div class="form-group">
+                            <label for="exampleInputPassword1">公司网址</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="url" name="com_url" value="{$company['com_url']}">
+                      </div>
+                      <div class="form-group">
+                            <img src="__PUBLIC__/Uploads/{$company['com_logo']}" width="50">
+                            <label for="exampleInputFile">公司LOGO</label>
+                            <input type="file" name="com_logo" id="com_logo">
+                      </div>
+                      <div class="form-group">
+                            <label for="exampleInputFile">公司地址</label>
+                            <div data-toggle="distpicker">
+                                <div class="form-group">
+                                  <label class="sr-only" for="province2">Province</label>
+                                  <select class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="city2">City</label>
+                                  <select class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+                                </div>
+                                <div class="form-group">
+                                  <label class="sr-only" for="district2">District</label>
+                                  <select class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+                                </div>
+                              </div>
+                            <input type="text" class="form-control" id="add_detailed" placeholder="address" name="com_detailed" value="{$company['com_detailed']}">
+                      </div>
+                      <div id="media-con"></div>
+                      <div class="form-group">
+                            <div id="media"></div>
+                            <label for="exampleInputFile">媒体报道</label>
+                            <a id="media-add" class="btn btn-default">添加</a>
+                      </div>
+                      <div class="form-group">
+                            <label for="exampleInputFile">公司荣誉相册</label>
+                            <input type="file" id="iamge" multiple name="iamge[]">
+                            <p class="help-block">Example block-level help text here.</p>
+                      </div>
+                      <!-- 简介 -->
+                      <div class="form-group col-lg-12">
+                          <label class="left-label col-lg-12">公司简介<span>*</span>:</label>
+                          <div class="col-lg-12" style="z-index: 10">
+                              <textarea name="com_synopsis" id="myEditor1">{$company['com_synopsis']}</textarea>  
+                                <script type="text/javascript"> 
+                                  var editor1 = new UE.ui.Editor;
+                                    editor1.render("myEditor1");
+                    
+                                </script>  
+                            </div>
+                               
+                        </div>
+                        <!-- 简介结束 -->
+                        <!-- 发展历程 -->
+                      <div class="form-group col-lg-12">
+                          <label class="left-label col-lg-12">公司发展历程<span>*</span>:</label>
+                          <div class="col-lg-12" style="z-index: 10">
+                              <textarea name="com_history" id="myEditor2">{$company['com_history']}</textarea>  
+                                <script type="text/javascript"> 
+                                  var editor2 = new UE.ui.Editor;
+                                    editor2.render("myEditor2");
+                    
+                                </script>  
+                            </div>
+                               
+                        </div>
+                        <!-- 发展历程结束 -->
+                        <!-- 公司业务 -->
+                      <div class="form-group col-lg-12">
+                          <label class="left-label col-lg-12">公司公司业务<span>*</span>:</label>
+                          <div class="col-lg-12" style="z-index: 10">
+                              <textarea name="com_service" id="myEditor3">{$company['com_service']}</textarea>  
+                                <script type="text/javascript"> 
+                                  var editor3 = new UE.ui.Editor;
+                                    editor3.render("myEditor3");
+                    
+                                </script>  
+                            </div>
+                               
+                        </div>
+                        <!-- 公司业务结束 -->
+                         <!-- 公司荣誉 -->
+                      <div class="form-group col-lg-12">
+                          <label class="left-label col-lg-12">公司公司荣誉<span>*</span>:</label>
+                          <div class="col-lg-12" style="z-index: 10">
+                              <textarea name="com_honor" id="myEditor4" >{$company['com_honor']}</textarea>  
+                                <script type="text/javascript"> 
+                                  var editor4 = new UE.ui.Editor({
+                                        textarea:'introduction'
+                                    
+                                    });
+                                    editor4.render("myEditor4");
+                     
+                                </script>  
+                            </div>
+                               
+                        </div>
+                        <!-- 公司荣誉结束 -->
+                          <!-- 公司文化 -->
+                      <div class="form-group col-lg-12">
+                          <label class="left-label col-lg-12">公司公司文化<span>*</span>:</label>
+                          <div class="col-lg-12" style="z-index: 10">
+                              <textarea name="com_culture" id="myEditor5"> {$company['com_culture']}</textarea>  
+                                <script type="text/javascript"> 
+                                  var editor5 = new baidu.editor.ui.Editor;
+                                    editor5.render("myEditor5");
+                    
+                                </script>  
+                            </div>
+                               
+                        </div>
+                        <!-- 公司文化结束 -->                      
+                        <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Check me out
+                            </label>
+                      </div>
+                      <button type="submit" class="btn btn-default" id="submit-a" >Submit</button>
+                      <input type="submit">
+                </form>
+  
+                
+                 <!-- 魔态框 -->
+                  <div class="container">
+                      <div class="modal fade" id="media-modal-box">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <form action="{:U('/Index.php/Admin/Media/add_media')}" method="post">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                      <h4 class="modal-title">媒体频道</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                            <div class="form-group">
+                                                  <label for="exampleInputPassword1">标题</label>
+                                                  <input type="text" class="form-control" id="med_title" placeholder="url" name="med_title">
+                                            </div>
+                                            <div class="form-group">
+                                                  <label for="exampleInputPassword1">来源</label>
+                                                  <input type="text" class="form-control" id="med_source" placeholder="url" name="med_source">
+                                            </div>
+                                            <div class="form-group">
+                                                  <label for="exampleInputPassword1">网址</label>
+                                                  <input type="text" class="form-control" id="med_url" placeholder="url" name="med_url">
+                                            </div>                                
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                     <!-- <input type="submit"> -->
+                                      <a class="btn btn-primary" id="add-media" onclick="onmedia()" data-dismiss="modal">Save changes</a>
+                                    </div>
+                                </form>
+                              </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                          </div><!-- /.modal -->
+                      </div>
+                  <!-- 模态框结束 -->
+        </div>
+    </div>
+</body>
+<script>
+
+     // 媒体标题
+      var med_title = $('#med_title').val();
+      //来源
+      var med_source = $('#med_source').val();
+      //网址
+      var med_url = $('#med_url').val();
+      //ajax 提交
+      var media_url = '/Index.php/Admin/Media/media_list';
+      $.post(media_url,function(data){
+              if(data){
+                  $('#media').append().html(data);
+              }
+              
+        
+      });
+    function onVerify(){
+
+      //公司荣誉相册
+       //公司照片
+        var image = document.getElementById("image").files;
+         //ajax 请求
+        var album_url = '/Index.php/Admin/Image/add_Image';
+        $.post(address_url , {'image':image}, function(data){
+          
+
+        });
+
+    }
+ 
+//#################################################################################
+
+  $('#media-add').click(function(){
+        $('#media-modal-box').modal();
+
+    });
+
+
+
+  //媒体
+  function onmedia(){
+      // 媒体标题
+      var med_title = $('#med_title').val();
+      //来源
+      var med_source = $('#med_source').val();
+      //网址
+      var med_url = $('#med_url').val();
+      //ajax 提交
+      var media_url = '/Index.php/Admin/Media/add_media';
+      $.post(media_url,{'med_title':med_title,'med_source':med_source,'med_url':med_url},function(data){
+              if(data){
+                  $('#media').append().html(data);
+              }
+              
+        
+      });
+  }
+  
+    
+</script>
+</html>
+

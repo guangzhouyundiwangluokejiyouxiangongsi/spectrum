@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/yunpu.css">
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/index.js"></script>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.data.js"/>
+     <load href="__PUBLIC__/ydadmin/js/global.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/main.js"/>
+    <load href="__PUBLIC__/ueditor/utf8-php/ueditor.config.js"/>
+     <load href="__PUBLIC__/ueditor/utf8-php/ueditor.all.min.js"/>
+     <script type="text/javascript" src="__PUBLIC__/webuploader/0.1.5/webuploader.min.js"></script>    <!-- 引用插件js -->
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/webuploader/0.1.5/webuploader.css" />
+
+    <title>云狄百科</title>
+</head>
+<style>
+.save{display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 60px;
+    text-align: center;
+    width: 100px;
+    margin-left: 30px;
+    height: 30px;
+    line-height: 30px;}
+</style>
+<body>
+	
+		<!-- 照片上传-->
+	<div class="ypaddphoto">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>上传图片</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="yptjmain">
+				<div  class="filePicker"><img src="__PUBLIC__/img/addfile.png" ></div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+
+		<!-- 照片上传成功-->
+	
+	<div class="ypaddphotook">
+	<form action="/admin/index/img_add" method="post" id="formall">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>上传图片</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="ypaddphotookmain">
+				<ul>
+				<span id="fileList2"></span>
+					<!-- <div class="filePicker"><li class="filesb"><img src="__PUBLIC__/img/alignaddphoto.png"></li></div> -->
+					<div class="filePicker"><li class="filesb"><img src="__PUBLIC__/img/alignaddphoto.png"></li></div>
+					<div class="cl"></div>
+				</ul>
+			
+				<input type="submit" value="保存" class="phobaocui save">
+				<!-- <a href="javascript:" class="phobaocui save" id="save">保存</a> -->
+				<a href="javascript:" class="phoquxiao guanbi" >取消</a>
+			</div>
+		</div>
+	</form>
+	</div>
+	<script type="text/javascript">
+            $('.ypaddphoto').css('visibility','hidden');
+            $('.ypaddphotook').css('visibility','hidden');
+
+           var $list=$("#fileList2");   //这几个初始化全局的百度文档上没说明，好蛋疼
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+           var uploader = WebUploader.create({
+	            // 选完文件后，是否自动上传。
+	           auto: true,
+	            // swf文件路径
+	           swf: '../Uploader.swf', //加载swf文件，路径一定要对
+	            // 文件接收服务端。
+	            server: '{:U("webup")}',
+	            // 选择文件的按钮。可选。
+	            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+	            pick: '.filePicker',
+	            // 只允许选择图片文件。
+	            accept: {
+	                title: 'Images',
+	                extensions: 'gif,jpg,jpeg,bmp,png',
+	                mimeTypes: 'image/'
+	            }
+	        });
+      //上传完成事件监听
+        uploader.on( 'uploadSuccess', function(file,response) {
+            $('.ypaddphotook').css('visibility','visible');
+
+        	// console.log(response.name);
+        	var $li = $('<li id="'+ file.id +'"><img src="'+ response.url +'"><span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span><input type="text" name="img_title[]" value="'+ response.name +'" placeholder="请输入描述" ><input type="hidden" name="img_path[]" value="'+ response.url +'"/></li>'
+                    );
+        	$list.append( $li );
+         	// $('.ypaddphoto').css('display','none');
+
+        });
+
+        function ajax_img(){
+        	$.post('/admin/index/ajax_img',function(res){
+        		$list.append( res );
+        	})
+        	// window.clearTimeout(t2);
+        }
+</script>
+		<script type="text/javascript">
+		// 照片上传
+			// function addphoto(){z
+			// 	$('.ypaddphoto').show();			
+			// }
+
+		// //图片上传成功
+		// 	function 
+
+		// 删除照片
+		function removepho(that){
+			$(that).parent('span').parent('li').remove();
+
+		}
+
+
+
+
+		// 添加
+				function addnews(){
+						$('.ypnews').show();
+				}
+				$('.guanbi').bind('click',function(){
+					$('.ypaddphoto').hide();
+					$('.ypaddphotook').hide();
+					$('.ypnews').hide();
+					$('.xiugaissa').hide();
+					$('.yptjqk').click();					
+				})
+			$(function(){
+			    $(".nesbaocui").click(function(){
+			        var newObj = $('<li></li>');
+			        $(".ypnewsmain").append(newObj);
+			        var result1 = $("#yptjtitle").val();
+			        var result2 = $("#yptjlaiyuan").val();
+			        newObj.html((newObj.index()+1)+' . '+'<span class="yptjtitl">'+result1+'</span>'+' . '+'<span class="laiyuan">'+result2+'</span>'+'<i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i><i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>').attr("from","new");		        	
+			        $('.ypnews').hide();
+					$('.yptjqk').click();
+			    });
+			});
+				// 删除
+				function shanchu(that){
+					$(that).parent('li').remove();
+
+				}
+				// 修改
+				function xiugai(that){
+					$('.xiugaissa').show();
+					$("#yptjtitlessa").val($(that).siblings('.yptjtitl').html());
+					$("#yptjlaiyuanssa").val($(that).siblings('.laiyuan').html());
+					// $(that).siblings('.yptjtitl').html($("#yptjtitlessa").val();
+					// $(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val();
+					// $('.xiugaissa').hide();
+					// $('.yptjqk').click();
+				}
+				function xiugaissaa(that){
+
+					$(that).siblings('.yptjtitl').html($("#yptjtitlessa").val());
+					$(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val());
+					$('.xiugaissa').hide();
+				}
+				$('.yptjform input').bind('focus',function(){
+						$(this).css('border','1px solid #2196f3');
+				});
+				$('.yptjform input').bind('blur',function(){
+					$(this).css('border','1px solid #ccc');
+				});
+		</script>		
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/Public/img/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />  
+	<title>云谱首页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/y_index.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/landscape.css">
+	<include file="header" />
+	
+	<div class="y_content">
+		<!-- banner -->
+		<div class="y_banner">
+			<img src="__PUBLIC__/mobile/img/y_index_banner.png">
+		</div>
+		<!-- 行业分类 -->
+		<div class="y_message">
+			<div class="y_title">
+				<span>{$sc_name}</span>
+				<!-- <a href="/Mobile/sort.html">详情查看</a> -->
+			</div>
+			<ul class="company">
+				
+			</ul>
+		</div>
+
+
+		<include file="footer" />
+<script>
+	company();
+	var p =1
+	function company(){
+		var sc_id = '{$sc_id}';
+		$.get('/Mobile/company_cat',{'p':p,'sc_id':sc_id},function(res){
+			if (res){
+				$('.company').append(res);
+			}
+		})
+		p++;
+	}
+	$(window).scroll(function () {
+    var maxScroll=$(document).height()-$(window).height();
+
+    if ($(window).scrollTop() >= maxScroll) {
+      company();
+    }
+  });
+
+</script>
+</html>

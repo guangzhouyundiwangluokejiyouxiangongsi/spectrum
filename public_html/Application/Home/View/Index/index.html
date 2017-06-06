@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<link rel="shortcut icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon" />
+	<title>{$system.title}</title>
+	<meta http-equiv="keywords" content="{$system.guanjianci}" />
+	<meta name="description" content="{$system.miaoshu}" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/baike.css">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/MxSlider.css">
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/benner.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/scroll_image.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/MxSlider.js"></script>
+	<style>
+	.company_list .c_list_box{width:1200px;margin: 0 auto;}
+	.company_list .c_list_box div{width: 278px;height: 320px;cursor: pointer;margin: 10px ;float: left;font-size: 12px;text-align: center;color:#666;background: #f7f7f7;}
+
+	.company_list .c_list {transition: All 0.4s ease-in-out;-webkit-transition: All 0.4s ease-in-out;-moz-transition: All 0.4s ease-in-out;-o-transition: All 0.4s ease-in-out;}
+	
+	.company_list .title{text-align: center;margin-top: 50px;margin-bottom: 30px;font-size: 20px;color: #000;}
+	.company_list .c_list:hover { transform: scale(1.2); -webkit-transform: scale(1.2);-moz-transform: scale(1.2);-o-transform: scale(1.2); -ms-transform: scale(1.2);-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.06) inset;-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;}
+	.company_list .c_list a{text-decoration: none;}
+	.company_list .c_list a img{width: 100%;height: 190px;}
+	.company_list .c_list a h4:hover{color: #029fd3;}
+	.company_list .c_list a h4{ height: 44px;overflow: hidden;text-align: left;padding:0 20px;font-size: 16px;color: #454545;text-align: center;margin: 0;margin: 10px 0;    display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+	.company_list  .c_list a p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; padding:0 20px; height: 40px; overflow: hidden;text-align: left;font-size: 14px; margin-bottom: 20px;color: #999;line-height: 20px;}
+	.company_list  .more{width: 250px;background: #029fd3;color: #FFFFFF;display: block;text-align: center;font-size: 18px;height: 50px;line-height: 50px;margin: 20px auto;cursor: pointer;}
+	</style>
+</head>
+<body>
+<!-- 头部开始 -->
+	<include file="Public/header" />
+	<!-- 头部结束 -->
+<div class="cl"></div>
+	<!-- 主题内容开始 -->
+	<main class="main" style="display: block;">
+
+	<!-- benner -->
+		<div class="banner" id="banner" >
+		<foreach name="shuffling" item="vv">
+			<if condition="$vv[img]">
+				<a href="{$vv.url}" class="d1" style="background:url({$vv.img}) center no-repeat;"<?php if($vv['is_new_open'])echo 'target="_blank"';?>></a>
+			</if>
+		</foreach>
+			<div class="d2" id="banner_id">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="cl"></div>
+		</div>
+		<script type="text/javascript">banner()</script>
+		<div class="cl"></div>		
+	<!--企业百科-->
+		<!-- <div class="scene">
+			<div class="c">
+				<div class="title">企业云谱</div>
+			</div>
+			<div class="LeftHandle" id="scrollArrLeft2">&nbsp;</div>
+			<div class="rollBox-scene" id="scrollCont2" style="margin-left: 70px;">
+					<div class="scrollCont-2">
+						<foreach name="company" item="com" key="k">
+	                        <div class="pic">
+	                            <a href="/CompanyInfo/details?id={$com.com_id}" target="_blank" class="baikea">
+	                                <img src="{:tempimg($com['img_id'],335,190)}" alt="">
+	                                <h4>{:getSubstr($com['com_name'],0,15)}</h4>
+	                                <p>{$com['com_synopsis']}</p>
+	                            </a>
+	                        </div>
+                        </foreach>
+					</div>
+			</div>
+			<div class="RightHandle" id="scrollArrRight2">&nbsp;</div>
+		</div> -->
+		<div class="company_list">
+			<div class="title">企业云谱</div>
+		    <div class="c_list_box">
+		    	<!-- <foreach name="company" item="com" key="k">
+		        <div class="c_list">
+		            <a href="/CompanyInfo/details?id={$com.com_id}">
+		                <img src="{:tempimg($com['img_id'],370,200)}" >
+		                <h4>{$com['com_name']}</h4>
+		                <p>{$com['com_synopsis']}</p>
+		            </a>
+		        </div>
+		        </foreach> -->
+		    </div>
+		    <div style="clear: both;"></div>
+		    <a class="more" onclick="jiazai()">查看更多</a>
+		</div>
+	<!-- 立即加入 -->
+	
+	<div class="nowjoin">
+		<div class="nowjoins">
+			<a href="http://www.yundi88.com/User/login.html" target="_blank">立即加入</a>
+		</div>
+	</div>
+	<!-- 行业分类 -->
+	<div class="Industry">
+		<h3>行业分类</h3>
+		<foreach name="store_cate"  item="cate">
+		             <dl>
+		              
+		            <dd><a href="{:U('/index.php/Home/CompanyInfo/lists',[scid=>$cate['sc_id']])}" target="_blank">{$cate['sc_name']}</a></dd>
+
+		             </dl>
+	        	</foreach>
+
+		<div class="cl"></div>
+	</div>
+	<!-- 云狄百科介绍 -->
+	<div class="introduced">
+		<div class="introducedl">
+			<h3>企业云谱介绍</h3>
+			<p>企业云谱是专业为企业/个体经营户公开化编辑的内容开放、自由、共享的网络企业信息系统,旨在创造一企业信息化领域平台,服务所有互联网企业的中文知识性企业云谱。在这里你可以参与词条编辑,分享贡献您的信息。</p>
+			<!-- <a href="#" target="_blank">查看更多>>></a> -->
+		</div>
+		<div class="introducedr"> 
+			<h3>加入伙伴</h3>
+			<div class="introducedm">
+				<!-- My box for the slider -->
+				<div class="mx-bugs_bunny">
+					<!-- Slider -->
+					<div class="ZI-slider">
+						<div>
+							<foreach name="shuffling2" item="vv" key="kk">
+							<php>if ($kk < 3){</php>
+							<a <?php if($vv['is_new_open'])echo 'target="_blank"';?> href="{$vv.url}"><img src="{$vv.img}" alt="" /></a>
+							<php>}</php>
+							</foreach>
+						</div>
+						<div>
+							<foreach name="shuffling2" item="vo" key="ko">
+							<php>if ($ko < 6 && $ko >2){</php>
+							<a <?php if($vo['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{$vo.img}" alt="" /></a>
+							<php>}</php>
+							</foreach>									
+						</div>
+						<div>
+							<foreach name="shuffling2" item="vs" key="ks">
+							<php>if ($ks < 9 && $ks > 5){</php>
+							<a <?php if($vs['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{$vs.img}" alt="" /></a>
+							<php>}</php>
+							</foreach>
+						</div>
+					</div>
+					<!-- Slider -->
+				</div>
+				<!-- My box for the slider -->
+
+			</div>
+
+		</div>
+		<div class="cl"></div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){		
+		$( '.ZI-slider' ).MxSlider( {
+			autoPlay: true,
+			dots: true,
+			timeSlide: 500
+		} );
+	})
+	jiazai();
+	var p = 1;
+	function jiazai(){
+		$.get('/Home/Index/ajax_company?p='+p,function(res){
+			if (res){
+				$('.c_list_box').append(res);
+				if(res.match(/div/g).length < 16){
+					$('.more').remove();
+				}
+			}else{
+				$('.more').remove();
+			}
+			p++;
+		})
+	} 
+	</script>
+	
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/gujian.js"></script>
+	</main>
+
+
+<include file="Public/footer" />
+	
+	
+</body>
+</html>

@@ -1,0 +1,80 @@
+<include file="Public/_meta" />
+<style>
+.select-box {width: 70%;}
+.input-text{width: 70%;}
+</style>
+</head>
+<body>
+<article class="cl pd-20">
+	<form action="{:U('Web/navigation_add')}" method="post" class="form form-horizontal" id="form-member-add">
+	<input type="hidden" name="id" value="{$navigation2['id']}">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>导航名字：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$navigation2['navigation']}" placeholder="" id="username" name="navigation">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>上级导航：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select class="select" size="1" name="pid">
+					<option value="">请选择</option>
+					<option value="0" <if condition="!$navigation2['pid']"> selected="true"</if>>顶级导航</option>
+					<foreach name="navigation" item="vv" key="kk">
+						<option value="{$kk}" <if condition="$kk eq $navigation2['pid']"> selected="true"</if> >{$vv}</option>
+					</foreach>
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>外部链接：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$navigation2['url']}" placeholder="http://www.yundi88.com" name="url">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>排序：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$navigation2['orderid']}" placeholder="50" name="orderid">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否显示：</label>
+			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+				<div class="radio-box">
+					<input type="radio" id="sex-2" name="is_show" value="1"<?php if($navigation2['is_show'])echo 'checked="true"';?>>
+					<label for="sex-2">显示</label>
+				</div>
+				<div class="radio-box">
+					<input type="radio" id="sex-3" name="is_show" value="0" <?php if(!$navigation2['is_show'])echo 'checked="true"';?>>
+					<label for="sex-3">不显示</label>
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>是否新窗口打开：</label>
+			<div class="formControls col-xs-8 col-sm-9 skin-minimal">
+				<div class="radio-box">
+					<input type="radio" id="sex-2" name="is_new_open" value="1" <?php if($navigation2['is_new_open'])echo 'checked="true"';?> >
+					<label for="sex-2">新窗口</label>
+				</div>
+				<div class="radio-box">
+					<input type="radio" id="sex-3" name="is_new_open" value="0" <?php if(!$navigation2['is_new_open'])echo 'checked="true"';?>>
+					<label for="sex-3">原窗口</label>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+				<input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</article>
+
+<include file="Public/_footer" />
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

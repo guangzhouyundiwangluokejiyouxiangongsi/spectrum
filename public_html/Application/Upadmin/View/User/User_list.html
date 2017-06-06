@@ -1,0 +1,212 @@
+<include file="Public/_meta" />
+<!--_meta 作为公共模版分离出去-->
+<body>
+<!--_header 作为公共模版分离出去-->
+<include file="Public/_header" />
+<!--/_header 作为公共模版分离出去-->
+<!--_menu 作为公共模版分离出去-->
+<include file="Public/_menu" />
+<!--/_menu 作为公共模版分离出去-->
+<style>
+.input{    
+	width: 60px;
+    height: 21px;
+    font-size: 16px;
+    border:1px solid #ddd;
+}
+</style>
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户中心 <span class="c-gray en">&gt;</span> 会员列表<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+
+			<div class="text-c"> 搜索公司：
+				<input type="text" class="input-text" style="width:250px" placeholder="输入公司名称" id="" name="">
+				<button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+			</div>
+			<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span> 
+
+			
+			<span class="r">共有数据：<strong>88</strong> 条</span> </div>
+			<div class="row cl" style="width: 19%">
+
+			<div class="formControls col-xs-8 col-sm-9"><span class="select-box">
+				<select class="select" size="1" onchange="shselect()" name="status">
+					<option value="">请选择</option>
+					<option value="1">审核通过</option>
+					<option value="2">审核未通过</option>
+					<option value="0">未审核</option>
+				</select>
+				</span> </div>
+			</div>
+			<div class="ajax_list">
+			<div class="mt-20">
+				<table class="table table-border table-bordered table-hover table-bg table-sort">
+					<thead>
+						<tr class="text-c">
+							<th width="25"><input type="checkbox" name="" value=""></th>
+							<th width="80">ID</th>
+							<th width="100">公司ID</th>
+							<th width="90">公司名字</th>
+							<th width="150">公司网址</th>
+							<th width="250">公司地址</th>
+							<th width="60">是否推荐</th>
+							<th width="60">访问量</th>
+							<th width="60">点赞量</th>
+							<th width="60">审核结果</th>
+							<th width="130">加入时间</th>
+							<th width="100">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<foreach name="company_list" item="vv">
+						<tr class="text-c">
+							<td><input type="checkbox" value="1" name=""></td>
+							<td>{$vv.com_id}</td>
+							<td>{$vv.com_storeid}</td>
+							<td>{$vv.com_name}</td>
+							<td>
+							<foreach name="vv[com_url]" item="vo">
+							<a target="_blank" href="http://{$vo}">{$vo}</a>
+							<php>break;</php>
+							</foreach>
+							</td>
+							<td class="text-l">{$vv.com_province},{$vv.com_city},{$vv.com_district},{$vv.com_detailed}</td>
+							<td><if condition="$vv[com_is_rec]"><img src="__PUBLIC__/img/yes.png" width="25%" onclick="qiehuan(this,'{$vv.com_id}')"><else /><img src="__PUBLIC__/img/no.png" width="25%" onclick="qiehuan(this,'{$vv.com_id}')"></if></td>
+							<td><input type="text" value="{$vv.com_visit}" class="input" onchange="save_visit(this,'{$vv.com_id}')"></td>
+							<td><input type="text" value="{$vv.com_praise}" class="input" onchange="save_praise(this,'{$vv.com_id}')"></td>
+							<td>{$vv.com_status}</td>
+							<td>{:date('Y-m-d H:i:s',$vv[com_time]);}</td>
+							<td class="td-manage"><a target="_blank" href="{:U('user/shenhe')}?com_id={$vv.com_id}">审核&nbsp;</a><a style="text-decoration:none" target="_blank" href="/CompanyInfo/details?id={$vv.com_id}" title="进入该公司百科"><i class="Hui-iconfont">&#xe631;</i></a>  <a title="删除" href="javascript:;" onclick="member_del(this,'{$vv.com_id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+						</tr>
+					</foreach>
+					</tbody>
+				</table>
+			</div>
+			</div>
+			<td colspan="3" bgcolor="#FFFFFF"><div class="pages" style="text-align: center;">
+                    {$page}
+            </div></td>
+		</article>
+	</div>
+</section>
+<include file="Public/_footer" />
+<script type="text/javascript">
+function shselect(){
+	var status = $('.select').val();
+	if (!status) return false;
+	$.post('/Upadmin/User/ajax_list',{'status':status},function(res){
+		if (res){
+			$('.ajax_list').html(res);
+		}else{
+			alert('数据获取失败');
+		}
+	})
+}
+function qiehuan(obj,id){
+	var vv;
+	if (obj.src == 'http://spectrum.yundi88.com/Public/img/yes.png'){
+		vv = 0;
+		obj.src = 'http://spectrum.yundi88.com/Public/img/no.png';
+	}else{
+		vv = 1;
+		obj.src = 'http://spectrum.yundi88.com/Public/img/yes.png';
+	}
+
+	$.post('ajax_is_rec',{'com_is_rec':vv,'com_id':id},function(res){
+		if (!res) alert('修改失败');
+	})
+}
+
+function save_visit(obj,id){
+	$.post('ajax_save',{'com_id':id,'com_visit':obj.value},function(res){
+		if (res){
+			layer.msg('修改成功!',{icon: 1,time:1000});
+		}else{
+			layer.msg('修改失败!',{icon: 2,time:1000});
+		}
+	})
+}
+function save_praise(obj,id){
+	$.post('ajax_save',{'com_id':id,'com_praise':obj.value},function(res){
+		if (res){
+			layer.msg('修改成功!',{icon: 1,time:1000});
+		}else{
+			layer.msg('修改失败!',{icon: 2,time:1000});
+		}
+	})
+}
+function shenhe(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+$(function(){
+	$('.table-sort').dataTable({
+		"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+		"bStateSave": true,//状态保存
+		"aoColumnDefs": [
+		  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		  {"orderable":false,"aTargets":[0,8,9]}// 制定列不参与排序
+		]
+	});
+	$('.table-sort tbody').on( 'click', 'tr', function () {
+		if ( $(this).hasClass('selected') ) {
+			$(this).removeClass('selected');
+		}
+		else {
+			table.$('tr.selected').removeClass('selected');
+			$(this).addClass('selected');
+		}
+	});
+});
+/*用户-添加*/
+function member_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+/*用户-查看*/
+function member_show(title,url,id,w,h){
+	layer_show(title,url,w,h);
+}
+/*用户-停用*/
+function member_stop(obj,id){
+	layer.confirm('确认要停用吗？',function(index){
+		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_start(this,id)" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a>');
+		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
+		$(obj).remove();
+		layer.msg('已停用!',{icon: 5,time:1000});
+	});
+}
+
+/*用户-启用*/
+function member_start(obj,id){
+	layer.confirm('确认要启用吗？',function(index){
+		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="member_stop(this,id)" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>');
+		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
+		$(obj).remove();
+		layer.msg('已启用!',{icon: 6,time:1000});
+	});
+}
+/*用户-编辑*/
+function member_edit(title,url,id,w,h){
+	layer_show(title,url,w,h);
+}
+/*密码-修改*/
+function change_password(title,url,id,w,h){
+	layer_show(title,url,w,h);	
+}
+/*用户-删除*/
+function member_del(obj,id){
+	layer.confirm('确认要删除吗？',function(index){
+		$.post('ajax_del',{'com_id':id},function(res){
+			if (res.status == 1){
+				$(obj).parents("tr").remove();
+				layer.msg(res.msg,{icon:1,time:1000});
+			}else{
+				layer.msg(res.msg,{icon:2,time:1000});
+			}
+		})
+	});
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

@@ -1,0 +1,112 @@
+ <!-- 引入头部 -->
+ <include file="Public:Table/header"/>
+
+    <div class="am-cf am-padding">
+    </div>
+
+    <div class="am-g">
+      <div class="am-u-md-6 am-cf">
+        <div class="am-fl am-cf"> 
+          <div class="am-btn-toolbar am-fl">
+
+            <div class="am-form-group am-margin-left am-fl">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <form action="{:U('Admin/User/index')}" method="get">
+
+        <div class="row" style="width: 960px;">
+            <div class="col-xs-6 col-md-4"></div>
+            <div class="col-xs-6 col-md-3">
+                <select id='search' name="search" class="form-control" >
+                    <option selected>Search Type</option>
+                    <option value="clt_id">ID</option>
+                    <option value="clt_user">Account</option>
+                    <option value="clt_phone">Phone</option>
+                    <option value="clt_realname">Realname</option>
+                
+                </select> 
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+
+                <div class="input-group">
+                    <input type="text" name="content" class="form-control" placeholder="Search Content">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" type="submit" id='submit'>Search</button>
+                    </span>
+                </div>   
+            </div>
+        </div>
+    </form>
+    <!-- <form action="{:U('Admin/Client/index')}" method="get">
+                <select name="search" class="input_select">
+                    <option value="clt_id">id</option>
+                    <option value="clt_user">name</option>
+                    <option value="clt_phone">phone</option>
+                </select>
+
+                <input type="text" name="content">
+                <input type="submit" value="搜索">
+             </form> -->
+
+    <div class="am-g">
+      <div class="am-u-sm-12">
+        <!-- <form class="am-form"> --> 
+          <table class="am-table am-table-striped am-table-hover ">
+            <thead>
+              <tr>
+              <th>ID</th>
+              <th>Account</th>
+              <th>Phone</th>
+              <th>Gender</th>
+              <th>Realname</th>
+              <th>Addtime</th>
+              <th>Status</th>
+              </tr>
+          </thead>
+          <tbody>
+          <!-- 遍历用户 start --> 
+          <foreach name='list' key='key' item='val'>
+            <tr>
+              <td>{$val.clt_id}</td>
+              <!-- <td>{$val.clt_id}</td> -->
+              <td>{$val.clt_user}</td>
+              <td>{$val.clt_phone}</td>
+              <td>{$val.clt_sex}</td>
+              <td>{$val.clt_realname} </td> 
+             
+
+              <td>{$val.clt_addtime}</td>
+              <td>
+                    <button class="am-btn am-btn-default am-btn-xs am-text-secondary chstatus" onclick="_change({$val.clt_id},this)"><span class="am-icon-pencil-square-o">{$val.clt_status}</span> </button>
+              </td>
+            </tr>
+            </foreach>
+          <!-- 遍历用户 end -->
+
+          </tbody>
+        
+        </table>
+          <div class="am-cf">
+  <!-- 共 {$count}条记录 -->
+  <div id="show">
+      {$show}
+  </div>
+</div>
+          <hr />
+
+        <!-- </form> -->
+      </div>
+
+    </div>
+  </div>
+  <!-- content end --> 
+</div>
+<input type="hidden" title="{:U('Admin/User/change')}" id='url'>
+<script src="__PUBLIC__/Admin/js/Manager.js"></script>
+
+<include file="Public:Table/footer"/>

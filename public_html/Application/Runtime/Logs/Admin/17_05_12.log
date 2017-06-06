@@ -1,0 +1,1177 @@
+[ 2017-05-12T05:38:27+08:00 ] 140.205.201.32 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-05-12T09:06:41+08:00 ] 119.130.231.182 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 659 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-05-12T09:06:45+08:00 ] 119.130.231.182 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 659 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-05-12T09:10:11+08:00 ] 119.130.231.182 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 659 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-05-12T14:49:50+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-05-12T14:49:52+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-05-12T14:49:52+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T14:49:53+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T14:50:01+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_yulan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `yd_company_info` SET `com_id`='64',`com_name`='杰赛科技',`com_url`='a:1:{i:0;s:16:\"www.chinagci.com\";}',`com_logo`='/Public/Uploads/mod/2017-05-05/590c284d1fed0.png',`com_scname`='a:4:{i:0;s:6:\"衣服\";i:1;s:6:\"饮料\";i:2;s:9:\"矿泉水\";i:3;s:9:\"冰淇淋\";}',`com_province`='广东省',`com_city`='广州市',`com_district`='天河区',`com_detailed`='科韵路科运大厦7楼',`com_synopsis`='<p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 14px; line-height: normal; widows: 1;\"></span></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">广州杰赛科技股份有限公司（简称：杰赛科技）是高新技术企业和创新型企业，是由中国电子科技集团公司第七研究所民品部门于2000年转制组建的国有控股股份制上市企业（股票代码：002544），注册资本51576万元。杰赛科技业务范围涵盖电子信息与通信领域，可提供的产品和服务包括：互联网+行业应用、通信网络与电子工程咨询、规划、设计和优化，云计算研究及行业应用，智慧城市建设，电信增值业务，移动通信网络系列产品，有线/无线宽带接入产品，LED显示控制与多媒体信息发布系统，数字电视机顶盒，通信/计算机信息系统集成，高性能印制电路板等。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司申请专利900余项（发明专利660余项）、软件著作权148余项、软件产品登记证书约25项，主持或参与制定国际/国家/行业标准30余项，承担国家、省、市科技攻关项目100余项。并获得广东省高新技术企业、广东省软件企业、广州市重点软件企业(连续四年)、全国企事业知识产权试点单位、广东省知识产权示范企业、广州市知识产权工作站、中国通信业设备制造企业50强、广州市百强企业等荣誉称号。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">面向未来，杰赛科技将继续发挥“全流程、跨网络、多技术”的核心优势，秉承“永续创新、启迪未来”的发展理念，立足于电子信息领域,做大做强通信主业,形成以电子装备制造、通信网络技术服务为核心，以系统集成、物联网、通信设备制造为支柱，以智能制造、互联网+、大数据、云计算为新兴培育发展方向的业务格局，实现从基础制造、智能装备、系统集成到顶层设计、互联互通的全产业链覆盖，致力成为电子信息领域知名分综合服务提供商。</p><p><br/></p>',`com_history`='<p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">1月14日，我司获得“2013年度海珠区区长质量奖”，并给予50万元奖金奖励。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2月18日，杰赛科技马来西亚有限公司(GCI SCIENCE &amp; TECHNOLOGY（Malaysia）SDN BHD)开业庆典在马来西亚首都吉隆坡举行，不断拓展海外业务。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2014年4月，公司召开第四届董事会第十七次会议，审议通过了《关于改聘公司总裁的议案》：决定聘任杨绍华先生为公司总裁，任期自董事会审议通过日起至本届董事会届满日止。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">4月1日，中共广州市委常委凌伟宪带领市委调研组莅临我司开展“云计算与大数据”新业态产业专题调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">4月8日，中国航天科技集团公司科技委主任、中国科学院包为民院士一行莅临我司进行调研和现场办公。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">5月23日，广州市科技和信息化局马正勇局一行莅临我司调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">9月17日，海南省工业和信息化厅陈万馨副厅长一行莅临我司参观考察。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">9月29日，我司“下乡三送”活动到云浮市,捐助善款30万元，彰显国企责任。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月，我司杰赛互教通7Wanl项目、技术中心Ping-ball项目分别荣获中国电子科技集团公司熠星创新创意大赛复赛综合排名第2、第4 ！</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月3日，广州杰赛科技股份有限公司第三届职代会暨第三届工会会员代表大会召开。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月，杰赛科技获得了智慧城市发展论坛的“2014中国智慧城市技术创新奖”。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月24-26日，电科集团总会计师张登洲一行调研杰赛马来、印尼公司，对我司海外业务经营情况进行调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">12月12日，中国电科熠星创新创意大赛圆满落幕，杰赛科技PING-BALL项目路演凯旋归来。</p><p><br/></p>',`com_service`='<p><br/></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">通信网络建设、物联网应用建设、信息网络建设、云计算与大数据、电子电路设计与制造、其他业务</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">通信网络建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">广州杰赛科技股份有限公司专业从事通信信息网络的规划设计、网络优化业务，拥有优秀的技术专家队伍、丰富的工具及手段、严格的流程及质量管理；拥有涵盖信息通信全专业领域的咨询、设计、勘察甲级资质及其他多项资质证书；服务于通信运营商、设备制造商、政府机构及企业用户。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">物联网应用建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">1、具有30多年SCADA系统技术开发和应用经验。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2、完成超过1000个行业运行项目，是大型信息化系统集成提供商。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">3、是物联网研发（中高速传感网）的倡导者和主研单位。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">信息网络建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技大数据平台，是以自主知识产权、功能层次完备的IaaS+PaaS平台为基础，以Hadoop+MPP RDB混搭为架构的新技术平台，平台结合了云计算、大数据新兴技术，具备云计算系统的无限平滑扩展，以及大数据的海量数据存储、大规模分布式并发处理等特性，极好的适用于移动通信网、移动互联网的数据存储分析应用需求。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技大数据平台在数据模型、分布式处理、智能分析、安全等方面取得了针对性的技术突破。在行业落地方面，基于移动运营商的海量复杂数据，将基于云计算的大数据技术应用于针对通信网络规划、优化、咨询、数据增值的全方位需求，在超万维度频率优化、复杂城市环境的精定位、运营商咨询营销的数据挖掘等方面实现了技术和应用模式的创新；基于海量数据中存在的移动互联网的用户、时间、地域等特征，挖掘用户需求，实现面向移动互联网企业的产业战略咨询、市场战术规划、运营专题分析、创新产品规划等应用模式的创新。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛Vebula-Server是面向数据中心、企业服务器虚拟化需求研发的、基于liunx体系结构的自主知识产权云计算操作系统。可以支持大规模虚拟计算资源、存储资源、网络资源的统一管理。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">电子电路设计与制造</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技长期从事印制电路板制造业务，拥有22,000多平方米的生产厂房和全套先进的多层印制电路板加工、检测设备；已通过ISO9001:2008质量管理体系认证、ISO14001：2004环境管理体系认证；产品通过了美国UL安全认证，符合RoHS要求；通过了GJB 9001B-2009现场审核、军工基础产品认证，成为印制电路行业享有一定地位的军用印制电路板供应商。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司致力于快件、多品种、中小批量、高可靠性、特殊要求等印制电路板的制造，年加工100,000余种、200,000多平方米的电路板，最高层数可达32层，可为客户提供PCB设计、制造、贴装一站式服务。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">在高可靠性、特殊材料、特殊工艺印制电路板等市场领域处于业界领先水平</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">业务遍及国内各主要工业城市，海外已经拓展到欧美、日本、澳洲、新加坡等多个国家和地区。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">产品广泛应用于航空、航天、军用、通信、工业控制、轨道交通、医疗及核电等领域。</p><p><br/></p>',`com_honor`='<p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">成功进入全国企业500强</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">2016年04月05日</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司先后获得2011、2012、2013、2014、2015年深圳市互联网协会评选的“创新企业大奖”。成立8年多以来，先后为华为、上海宝钢集团、国美电器、康佳集团、富安娜、华强集团、中投证券等近3000家大型企业提供信息技术、电子商务等产品服务，并获得一致赞誉.</p><p><img src=\"/ueditor/php/upload/image/20170509/1494315530913113.png\" title=\"1494315530913113.png\" alt=\"baikemainlfour222.png\"/></p>',`com_culture`='<p><br/></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">勇于拼搏、积极向上</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">热心公益、回馈社会</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">尽职尽责、坚守使命</p><p><br/></p>',`com_scid`='741',`com_storeid`='606',`com_time`='1494571801',`com_status`='0' WHERE `com_id` = '64' [ RunTime:0.0049s ]
+
+[ 2017-05-12T14:51:55+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-05-12T14:52:14+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-05-12T14:52:14+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T14:52:15+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T14:52:20+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-05-12T14:52:20+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-05-12T14:56:40+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-05-12T14:56:40+08:00 ] 119.130.231.35 /admin/index/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:56:40+08:00 ] 119.130.231.35 /admin/index/css/yunpu.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:56:41+08:00 ] 119.130.231.35 /admin/index/js/jquery-1.11.3.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:56:41+08:00 ] 119.130.231.35 /admin/index/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:56:41+08:00 ] 119.130.231.35 /admin/index/images/shenhe.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/css/yunpu.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/js/jquery-1.11.3.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/images/shenhe.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:57:06+08:00 ] 119.130.231.35 /admin/index/images/shenhe.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/js/jquery-1.11.3.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/css/yunpu.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+ERR: 非法操作:css
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/js/index.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+ERR: 非法操作:js
+
+[ 2017-05-12T14:57:07+08:00 ] 119.130.231.35 /admin/index/images/shenhe.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-05-12T14:57:58+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-05-12T14:59:55+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-05-12T14:59:55+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T14:59:55+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:00:00+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_yulan
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `yd_company_info` SET `com_id`='64',`com_name`='杰赛科技',`com_url`='a:1:{i:0;s:16:\"www.chinagci.com\";}',`com_logo`='/Public/Uploads/mod/2017-05-05/590c284d1fed0.png',`com_scname`='a:4:{i:0;s:6:\"衣服\";i:1;s:6:\"饮料\";i:2;s:9:\"矿泉水\";i:3;s:9:\"冰淇淋\";}',`com_province`='广东省',`com_city`='广州市',`com_district`='天河区',`com_detailed`='科韵路科运大厦7楼',`com_synopsis`='<p><span style=\"color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 14px; line-height: normal; widows: 1;\"></span></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">广州杰赛科技股份有限公司（简称：杰赛科技）是高新技术企业和创新型企业，是由中国电子科技集团公司第七研究所民品部门于2000年转制组建的国有控股股份制上市企业（股票代码：002544），注册资本51576万元。杰赛科技业务范围涵盖电子信息与通信领域，可提供的产品和服务包括：互联网+行业应用、通信网络与电子工程咨询、规划、设计和优化，云计算研究及行业应用，智慧城市建设，电信增值业务，移动通信网络系列产品，有线/无线宽带接入产品，LED显示控制与多媒体信息发布系统，数字电视机顶盒，通信/计算机信息系统集成，高性能印制电路板等。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司申请专利900余项（发明专利660余项）、软件著作权148余项、软件产品登记证书约25项，主持或参与制定国际/国家/行业标准30余项，承担国家、省、市科技攻关项目100余项。并获得广东省高新技术企业、广东省软件企业、广州市重点软件企业(连续四年)、全国企事业知识产权试点单位、广东省知识产权示范企业、广州市知识产权工作站、中国通信业设备制造企业50强、广州市百强企业等荣誉称号。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">面向未来，杰赛科技将继续发挥“全流程、跨网络、多技术”的核心优势，秉承“永续创新、启迪未来”的发展理念，立足于电子信息领域,做大做强通信主业,形成以电子装备制造、通信网络技术服务为核心，以系统集成、物联网、通信设备制造为支柱，以智能制造、互联网+、大数据、云计算为新兴培育发展方向的业务格局，实现从基础制造、智能装备、系统集成到顶层设计、互联互通的全产业链覆盖，致力成为电子信息领域知名分综合服务提供商。</p><p><br/></p>',`com_history`='<p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">1月14日，我司获得“2013年度海珠区区长质量奖”，并给予50万元奖金奖励。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2月18日，杰赛科技马来西亚有限公司(GCI SCIENCE &amp; TECHNOLOGY（Malaysia）SDN BHD)开业庆典在马来西亚首都吉隆坡举行，不断拓展海外业务。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2014年4月，公司召开第四届董事会第十七次会议，审议通过了《关于改聘公司总裁的议案》：决定聘任杨绍华先生为公司总裁，任期自董事会审议通过日起至本届董事会届满日止。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">4月1日，中共广州市委常委凌伟宪带领市委调研组莅临我司开展“云计算与大数据”新业态产业专题调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">4月8日，中国航天科技集团公司科技委主任、中国科学院包为民院士一行莅临我司进行调研和现场办公。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">5月23日，广州市科技和信息化局马正勇局一行莅临我司调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">9月17日，海南省工业和信息化厅陈万馨副厅长一行莅临我司参观考察。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">9月29日，我司“下乡三送”活动到云浮市,捐助善款30万元，彰显国企责任。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月，我司杰赛互教通7Wanl项目、技术中心Ping-ball项目分别荣获中国电子科技集团公司熠星创新创意大赛复赛综合排名第2、第4 ！</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月3日，广州杰赛科技股份有限公司第三届职代会暨第三届工会会员代表大会召开。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月，杰赛科技获得了智慧城市发展论坛的“2014中国智慧城市技术创新奖”。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">11月24-26日，电科集团总会计师张登洲一行调研杰赛马来、印尼公司，对我司海外业务经营情况进行调研。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">12月12日，中国电科熠星创新创意大赛圆满落幕，杰赛科技PING-BALL项目路演凯旋归来。</p><p><br/></p>',`com_service`='<p><br/></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">通信网络建设、物联网应用建设、信息网络建设、云计算与大数据、电子电路设计与制造、其他业务</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">通信网络建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">广州杰赛科技股份有限公司专业从事通信信息网络的规划设计、网络优化业务，拥有优秀的技术专家队伍、丰富的工具及手段、严格的流程及质量管理；拥有涵盖信息通信全专业领域的咨询、设计、勘察甲级资质及其他多项资质证书；服务于通信运营商、设备制造商、政府机构及企业用户。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">物联网应用建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">1、具有30多年SCADA系统技术开发和应用经验。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">2、完成超过1000个行业运行项目，是大型信息化系统集成提供商。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">3、是物联网研发（中高速传感网）的倡导者和主研单位。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">信息网络建设</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技大数据平台，是以自主知识产权、功能层次完备的IaaS+PaaS平台为基础，以Hadoop+MPP RDB混搭为架构的新技术平台，平台结合了云计算、大数据新兴技术，具备云计算系统的无限平滑扩展，以及大数据的海量数据存储、大规模分布式并发处理等特性，极好的适用于移动通信网、移动互联网的数据存储分析应用需求。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技大数据平台在数据模型、分布式处理、智能分析、安全等方面取得了针对性的技术突破。在行业落地方面，基于移动运营商的海量复杂数据，将基于云计算的大数据技术应用于针对通信网络规划、优化、咨询、数据增值的全方位需求，在超万维度频率优化、复杂城市环境的精定位、运营商咨询营销的数据挖掘等方面实现了技术和应用模式的创新；基于海量数据中存在的移动互联网的用户、时间、地域等特征，挖掘用户需求，实现面向移动互联网企业的产业战略咨询、市场战术规划、运营专题分析、创新产品规划等应用模式的创新。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛Vebula-Server是面向数据中心、企业服务器虚拟化需求研发的、基于liunx体系结构的自主知识产权云计算操作系统。可以支持大规模虚拟计算资源、存储资源、网络资源的统一管理。</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">电子电路设计与制造</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">杰赛科技长期从事印制电路板制造业务，拥有22,000多平方米的生产厂房和全套先进的多层印制电路板加工、检测设备；已通过ISO9001:2008质量管理体系认证、ISO14001：2004环境管理体系认证；产品通过了美国UL安全认证，符合RoHS要求；通过了GJB 9001B-2009现场审核、军工基础产品认证，成为印制电路行业享有一定地位的军用印制电路板供应商。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司致力于快件、多品种、中小批量、高可靠性、特殊要求等印制电路板的制造，年加工100,000余种、200,000多平方米的电路板，最高层数可达32层，可为客户提供PCB设计、制造、贴装一站式服务。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">在高可靠性、特殊材料、特殊工艺印制电路板等市场领域处于业界领先水平</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">业务遍及国内各主要工业城市，海外已经拓展到欧美、日本、澳洲、新加坡等多个国家和地区。</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">产品广泛应用于航空、航天、军用、通信、工业控制、轨道交通、医疗及核电等领域。</p><p><br/></p>',`com_honor`='<p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">成功进入全国企业500强</p><h4 style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; color: rgb(51, 51, 51); font-weight: 200; line-height: normal; white-space: normal; widows: 1;\">2016年04月05日</h4><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">公司先后获得2011、2012、2013、2014、2015年深圳市互联网协会评选的“创新企业大奖”。成立8年多以来，先后为华为、上海宝钢集团、国美电器、康佳集团、富安娜、华强集团、中投证券等近3000家大型企业提供信息技术、电子商务等产品服务，并获得一致赞誉.</p><p><img src=\"/ueditor/php/upload/image/20170509/1494315530913113.png\" title=\"1494315530913113.png\" alt=\"baikemainlfour222.png\"/></p>',`com_culture`='<p><br/></p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">勇于拼搏、积极向上</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">热心公益、回馈社会</p><p style=\"margin-top: 20px; margin-bottom: 20px; padding: 0px; font-size: 14px; font-family: 微软雅黑; text-indent: 30px; text-align: justify; color: rgb(102, 102, 102); line-height: normal; white-space: normal; widows: 1;\">尽职尽责、坚守使命</p><p><br/></p>',`com_scid`='741',`com_storeid`='606',`com_time`='1494572400',`com_status`='0' WHERE `com_id` = '64' [ RunTime:0.0038s ]
+
+[ 2017-05-12T15:00:00+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-05-12T15:01:29+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-05-12T15:01:30+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /mnt/web/spectrum/public_html/ThinkPHP/Common/functions.php:850) /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /mnt/web/spectrum/public_html/ThinkPHP/Common/functions.php:850) /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /mnt/web/spectrum/public_html/ThinkPHP/Common/functions.php:850) /mnt/web/spectrum/public_html/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-05-12T15:01:31+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:01:31+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:02:11+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-05-12T15:02:12+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-05-12T15:02:12+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:02:12+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:04:06+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2017-05-12T15:04:08+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+
+[ 2017-05-12T15:04:08+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-05-12T15:04:17+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-05-12T15:04:18+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-05-12T15:04:18+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:04:18+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:04:20+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-05-12T15:04:49+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 679 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2017-05-12T15:04:52+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 679 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 679  [ RunTime:0.0001s ]
+
+[ 2017-05-12T15:04:52+08:00 ] 119.130.231.35 /admin/index/rightset
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-05-12T15:05:03+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 679 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-05-12T15:05:04+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 679 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: com_scname /mnt/web/spectrum/public_html/Application/Admin/Model/CompanyInfoModel.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 679  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: com_status /mnt/web/spectrum/public_html/Application/Admin/Controller/CompanyInfoController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: com_id /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 93 行.
+NOTIC: [8] Undefined index: com_name /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 97 行.
+NOTIC: [8] Undefined index: com_logo /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 144 行.
+NOTIC: [8] Undefined index: com_province /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 164 行.
+NOTIC: [8] Undefined index: com_city /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 169 行.
+NOTIC: [8] Undefined index: com_district /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 173 行.
+NOTIC: [8] Undefined index: com_detailed /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 176 行.
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+NOTIC: [8] Undefined index: com_synopsis /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 282 行.
+NOTIC: [8] Undefined index: com_history /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 299 行.
+NOTIC: [8] Undefined index: com_service /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 318 行.
+NOTIC: [8] Undefined index: com_honor /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 335 行.
+NOTIC: [8] Undefined index: com_culture /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 351 行.
+NOTIC: [8] Undefined index: com_id /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 550 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2017-05-12T15:05:04+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 679  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:05:04+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 679 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-05-12T15:05:08+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 679 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-05-12T15:07:13+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-05-12T15:07:15+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-05-12T15:07:15+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:07:15+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:07:16+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-05-12T15:07:18+08:00 ] 119.130.231.35 /admin/CompanyInfo/add_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: store_class /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 184 行.
+NOTIC: [8] Undefined variable: apply /mnt/web/spectrum/public_html/Application/Runtime/Cache/Admin/419e0d41903d9084a23840c8c3ea4e2a.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-05-12T15:07:19+08:00 ] 119.130.231.35 /admin/CompanyInfo/ajax_img
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `yd_image` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yd_image` WHERE `img_storeid` = 606  [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:07:19+08:00 ] 119.130.231.35 /Admin/Media/media_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `yd_media` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yd_media` WHERE `med_storeid` = 606 ORDER BY med_id desc LIMIT 6   [ RunTime:0.0002s ]
+
+[ 2017-05-12T15:07:23+08:00 ] 119.130.231.35 /Admin/index/tindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `yd_company_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yd_company_info` WHERE `com_storeid` = 606 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: status /mnt/web/spectrum/public_html/Application/Admin/Controller/IndexController.class.php 第 55 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+

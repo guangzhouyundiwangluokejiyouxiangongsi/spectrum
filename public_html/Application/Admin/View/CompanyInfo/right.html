@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/yunpu.css">
+	<script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<title>Document</title>
+</head>
+<body style="min-height:1000px;background:#ecf0f5;">
+	<div class="ypright" style="position:relative;">
+		<div class="ypheader">
+			<h4><i class="glyphicon glyphicon-book"></i>公司云谱</h4>
+		</div>
+		<div class="ypmain">
+			<div class="ypmain1">
+			<form active="" method="post" >
+				<table width="100%">
+					<tr>
+						<td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司名称</td>
+						<td style="width:60%;padding-left: 20PX;"><input onfocus="jujiao(this)" onblur="gongsi(this)" type="name" placeholder="请输入公司名称" name=""></td>
+						<td style="width:30%;padding-left: 20PX;color:red;border-right: none;">输入公司全称  （例如：广州XX设备有限公司）</td>
+					</tr>
+					<tr style="height:120px;">
+						<td style="width:10%;padding-left: 20PX;border-left: none;">公司网址</td>
+						<td style="width: 60%;padding-left: 20PX;line-height: 20px;border-right: none;min-height:120px;border-left: none;" class="wangzhib"><div class="aaaaaa"></div><div class="wangzhia"><input  class="wangzhi" type="name"  name="" onfocus="jujiaos(this)" onblur="gongsis(this)"><img src="./images/x.png" onclick="remove(this)"></div><a herf="javascript:" class="danjitianjia" onclick ="add()">点击添加</a></td>
+						<td style="width:30%;padding-left: 20PX;color:red;border-right: none;">保证每个网址的正确性，每个框填写一个网址</td>
+					</tr>
+					<script type="text/javascript">
+							function jujiao(that){
+								$(that).parent().css('border', '1px solid #2196f3');
+							}
+							function gongsi(that){
+								$(that).parent().css('border', '1px solid #ccc');
+								$(that).parent().css('border-top', 'none');
+							}
+							function jujiaos(that){
+								$(that).css('border', '1px solid #2196f3');
+							}
+							function gongsis(that){
+								$(that).css('border', '1px solid #ccc');								
+							}
+							function add(){								
+								var newObj = $('<div class="wangzhia"><input  class="wangzhi" type="name"  name="" onfocus="jujiaos(this)" onblur="gongsis(this)" ><img src="./images/x.png" onclick="remove(this)"></div>');
+       							 $(".aaaaaa").append(newObj);
+							}
+							function remove(that){
+								$(that).parent('div').remove();								
+							}
+					</script>
+					<tr>
+						<td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司LOGO</td>
+						<td style="width:60%;padding-left: 20PX;" class="filelogo"><img src="./images/LOGO1.png"><button class="danjishangchuang"><input type="file" value="" name="" id="shangchuang">上传LOGO</button></td>
+						<td style="width:30%;padding-left: 20PX;color:red;border-right: none;line-height: 20px;">每个企业拥有独特性标志。建议使用200KB大小文件，宽度180*最大高度400的GIF或PNG格式图片，审核通过后将在云狄百科首页/详情页生效（审核通过生效）</td>
+					</tr>
+				<tr>
+					<td style="width:10%;padding-left: 20PX;border-left: none;">公司地址</td>
+					<td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;" class="ypselect">
+						<select name="country" class="country countrys">
+				            <option value="none">选择省份</option>
+				            <option value="usa" >北京</option>
+				            <option value="en">上海</option>
+				            <option value="cn">广州</option>
+				        </select>
+				        <select name="country" class="country">
+				            <option value="none">选择城市</option>
+				            <option value="usa" >西城</option>
+				            <option value="en">东城</option>
+				            <option value="cn">丰台</option>
+				        </select>
+				         <select name="country" class="country">
+				            <option value="none">选择区域</option>
+				            <option value="usa">西城</option>
+				            <option value="en">东城</option>
+				            <option value="cn">丰台</option>
+				        </select>
+
+				        <input type="text" placeholder="详细地址" onfocus="jujiaos(this)" onblur="gongsis(this)" name="" class="ypcity" />
+					</td>
+				</tr>
+					<tr>
+						<td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">媒体报道</td>
+						<td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;">
+							<ul class="ypnewsmain">	
+								<li><span class="yptjtitl">1. 公司杨绍华总裁赴深圳办事处调研</span>
+									<span class="laiyuan">. 新华网</span>
+									<i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i>
+									<i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>
+									</li>
+								<li><span class="yptjtitl">2. 杰赛科技珠海通信产业园一期工程建设项目顺利通过竣工现场验收</span>
+									<span class="laiyuan">. 新华网</span>
+									<i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i>
+									<i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>
+									</li>
+							</ul>
+							<div class="cl"></div>
+							<a href="javascript:" class="danjitianjias" onclick="addnews()">点击添加</a></td>						
+					</tr>
+					<tr>
+						<td style="width:10%;padding-left: 20PX;border-left: none;border-bottom: none;border-right: none;">公司荣誉相册</td>
+						<td colspan="2" style="width:90%;padding-left: 20PX;border-bottom: none;border-right: none;">
+							<div class="ypphoto">
+								<div class="shanchuss" onclick="shanchuss(this);">×</div>
+								<img src="./images/kefu.png">
+								<div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30" onkeyup="javascript:setShowLength(this, 0, 'title_length');">
+									<span class="red title_length" ></span></div>
+							</div>
+							<div class="ypphoto">
+								<div class="shanchuss" onclick="shanchuss(this);">×</div>
+								<img src="./images/yuluanyp.png">
+								<div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30">
+								<span class="red title_length" ></span></div>
+							</div>
+							<div class="ypphoto">
+								<div class="shanchuss" onclick="shanchuss(this);">×</div>
+								<img src="./images/banner.jpg">
+								<div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30">
+								<span class="red title_length" ></span></div>
+							</div>
+							<div class="cl"></div>
+							<div style="position:relative">
+								
+								<span class="danjishangchuans" onclick="addphoto()">点击上传</span>
+							</div>
+						</td>												
+					</tr>
+				</table>
+			</form>
+			</div>
+			<script type="text/javascript">
+				$('.ypphoto img').bind('mouseover',function(){
+					$(this).siblings('.shanchuss').show();
+					// $('.shanchuss').show();
+				})
+				$('.ypphoto img').bind('mouseout',function(){
+					$(this).siblings('.shanchuss').hide();
+				})
+				$('.shanchuss').bind('mouseover',function(){
+
+					$(this).show();
+				})
+				$('.shanchuss').bind('mouseout',function(){
+
+					$(this).hide();
+				})
+				function shanchuss(that){
+					$(that).parent('div').remove();
+				}
+				$('.ypphoto input').bind('focus',function(){
+						$(this).parent().css('background','#fff');
+						$(this).parent().css('border','1px solid #2196f3');
+						$(this).siblings('span').show();
+						$(this).css('background','#fff');
+						$(this).keyup();
+				});
+				$('.ypphoto input').bind('blur',function(){
+						$(this).parent().css('background','#2196f3');
+						$(this).css('background','#2196f3');
+						$(this).siblings('span').hide();
+					});
+				$('.ypphoinput input').bind('keyup',function(){
+					var rem =$(this).val().length;
+					$(this).siblings('span').html(rem+'/30');
+
+				});
+						// 统计input框字数				
+					function setShowLength(obj, maxlength, id)
+					{
+					    var rem =obj.value.length/1024 - maxlength;
+					    var wid = id;
+					    if (rem < 0){
+					        rem = 0;
+					    }
+					}
+			</script>
+			<div class="ypmain2">
+				<div class="ypmaina">			
+					<div class="ypmainam">
+						<h4>公司简介</h4>
+						<div class='ypfutext'></div>
+					</div>
+				</div>
+				<div class="ypmaina">			
+					<div class="ypmainam">
+						<h4>发展历程</h4>
+						<div class='ypfutext'></div>
+					</div>
+				</div>
+				<div class="ypmaina">			
+					<div class="ypmainam">
+						<h4>公司业务</h4>
+						<div class='ypfutext'></div>
+					</div>
+				</div>
+				<div class="ypmaina">			
+					<div class="ypmainam">
+						<h4>公司荣誉</h4>
+						<div class='ypfutext'></div>
+					</div>
+				</div>
+				<div class="ypmainb">			
+					<div class="ypmainam">
+						<h4>公司文化</h4>
+						<div class='ypfutext'></div>
+					</div>
+				</div>
+				<div class="ypsubmit">
+					<button class="tijiao">提交审核</button>
+					<button class="yulan">预览</button>
+				</div>					
+			</div>		
+		</div>
+	</div>
+
+	<!-- 添加弹框 -->
+	<div class="ypnews">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>媒体报道</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="yptjmain">
+				<form active="" method="post" class="yptjform"> 
+					标题：<input type="text" placeholder="请输入媒体报道标题" vlaute="" id="yptjtitlessa"  name=""><br><br>
+					来源：<input type="text" placeholder="请输入媒体报道来源" vlaute="" id="yptjlaiyuanssa"  name=""><br><br>
+					网址：<input type="text" placeholder="请输入媒体报道网址" vlaute="" name=""><br><br>
+					<input type="reset" style="display: none;" class="yptjqk" name="">
+				</form>
+				<a href="javascript:" class="nesbaocui">保存</a>
+				<a href="javascript:" class="nesquxiao guanbi" >取消</a>
+			</div>
+		</div>
+	</div>
+	<!-- 修改弹框 -->
+	<div class="xiugaissa">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>媒体报道</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="yptjmain">
+				<form active="" method="post" class="yptjform"> 
+					标题：<input type="text" placeholder="请输入媒体报道标题" vlaute="" id="yptjtitlessa"  name=""><br><br>
+					来源：<input type="text" placeholder="请输入媒体报道来源" vlaute="" id="yptjlaiyuanssa"  name=""><br><br>
+					网址：<input type="text" placeholder="请输入媒体报道网址" vlaute="" name=""><br><br>
+					<input type="reset" style="display: none;" class="yptjqk" name="">
+				</form>
+				<a href="javascript:" class="nesbaocui " onclick="xiugaissaa(this)">保存</a>
+				<a href="javascript:" class="nesquxiao guanbi" >取消</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- 照片上传-->
+	<div class="ypaddphoto">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>上传图片</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="yptjmain">
+				<input type="file" name="" id="flies">
+				<img src="./images/addfile.png">
+			</div>
+		</div>
+	</div>
+
+		<!-- 照片上传成功-->
+	<div class="ypaddphotook">
+		<div class="yptianjia">
+			<div class="yptjheader">
+				<span>上传图片</span>
+				<a href="javascript:" class="guanbi">×</a>
+			</div>
+			<div class="ypaddphotookmain">
+				<ul>
+					<li>
+						<img src="./images/guanggao.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li>
+						<img src="./images/bianjiyp.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li>
+						<img src="./images/guanggao.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li>
+						<img src="./images/bianjiyp.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li>
+						<img src="./images/guanggao.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li>
+						<img src="./images/guanggao.png">
+						<span><i class="glyphicon glyphicon-trash" onclick="removepho(this)"></i></span>
+						<input type="text" placeholder="请输入描述" name="">
+					</li>
+					<li class="filesb"><input type="file" name="" id="filssa"><img src="./images/alignaddphoto.png"></li>
+					<div class="cl"></div>
+				</ul>
+			
+
+				<a href="javascript:" class="phobaocui">保存</a>
+				<a href="javascript:" class="phoquxiao guanbi" >取消</a>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		// 照片上传
+			function addphoto(){
+				alert('asasas');
+				$('.ypaddphoto').show();			
+			}
+
+		// //图片上传成功
+		// 	function 
+
+		// 删除照片
+		function removepho(that){
+			$(that).parent('span').parent('li').remove();
+
+		}
+
+
+
+
+		// 添加
+				function addnews(){
+						$('.ypnews').show();
+				}
+				$('.guanbi').bind('click',function(){
+					$('.ypaddphoto').hide();
+					$('.ypaddphotook').hide();
+					$('.ypnews').hide();
+					$('.xiugaissa').hide();
+					$('.yptjqk').click();					
+				})
+			$(function(){
+			    $(".nesbaocui").click(function(){
+			        var newObj = $('<li></li>');
+			        $(".ypnewsmain").append(newObj);
+			        var result1 = $("#yptjtitle").val();
+			        var result2 = $("#yptjlaiyuan").val();
+			        newObj.html((newObj.index()+1)+' . '+'<span class="yptjtitl">'+result1+'</span>'+' . '+'<span class="laiyuan">'+result2+'</span>'+'<i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i><i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>').attr("from","new");		        	
+			        $('.ypnews').hide();
+					$('.yptjqk').click();
+			    });
+			});
+				// 删除
+				function shanchu(that){
+					$(that).parent('li').remove();
+
+				}
+				// 修改
+				function xiugai(that){
+					$('.xiugaissa').show();
+					$("#yptjtitlessa").val($(that).siblings('.yptjtitl').html());
+					$("#yptjlaiyuanssa").val($(that).siblings('.laiyuan').html());
+					// $(that).siblings('.yptjtitl').html($("#yptjtitlessa").val();
+					// $(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val();
+					// $('.xiugaissa').hide();
+					// $('.yptjqk').click();
+				}
+				function xiugaissaa(that){
+
+					$(that).siblings('.yptjtitl').html($("#yptjtitlessa").val());
+					$(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val());
+					$('.xiugaissa').hide();
+				}
+				$('.yptjform input').bind('focus',function(){
+						$(this).css('border','1px solid #2196f3');
+				});
+				$('.yptjform input').bind('blur',function(){
+					$(this).css('border','1px solid #ccc');
+				});
+		</script>		
+</body>
+</html>

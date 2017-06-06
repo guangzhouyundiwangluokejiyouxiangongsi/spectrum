@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/yunpu.css">
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/index.js"></script>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.data.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.js"/>
+        <load href="__PUBLIC__/jQueryDistpicker/js/main.js"/>
+        <load href="__PUBLIC__/ueditor/utf8-php/ueditor.config.js"/>
+     <load href="__PUBLIC__/ueditor/utf8-php/ueditor.all.min.js"/>
+    <title>Document</title>
+</head>
+<body style="min-height:1000px;background:#ecf0f5;">
+    <div class="ypright" style="position:relative;">
+
+        <div class="ypheader">
+            <h4><i class="glyphicon glyphicon-book"></i>公司云谱</h4>
+        </div>
+
+        <div class="ypmain">
+            <div class="ypmain1">
+            <form action="{:U('/Index.php/Admin/CompanyInfo/add_info')}" method="post" enctype="multipart/form-data">
+                <table width="100%">
+                    <tr>
+                    <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司名称</td>
+                    <td style="width:60%;padding-left: 20PX;"><input onfocus="jujiao(this)" onblur="gongsi(this)" type="name" placeholder="请输入公司名称" name="com_name" value="{$company['com_name']}"></td>
+                    <td style="width:30%;padding-left: 20PX;color:red;border-right: none;">输入公司全称  （例如：广州XX设备有限公司）</td>
+                    </tr>
+                    <tr style="height:120px;">
+                        <td style="width:10%;padding-left: 20PX;border-left: none;">公司网址</td>
+                        <td style="width: 60%;padding-left: 20PX;line-height: 20px;border-right: none;min-height:120px;border-left: none;" class="wangzhib"><div class="aaaaaa"></div><div class="wangzhia"><input  class="wangzhi" type="name"  name="url_con[]" onfocus="jujiaos(this)" onblur="gongsis(this)"><img src="__PUBLIC__/ydadmin/images/x.png" onclick="remove(this)"></div><a herf="javascript:" class="danjitianjia" onclick ="add()">点击添加</a></td>
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;">保证每个网址的正确性，每个框填写一个网址</td>
+                    </tr>
+                    <script type="text/javascript">
+                            function jujiao(that){
+                                    $(that).parent().css('border', '1px solid #2196f3');
+                            }
+                            function gongsi(that){
+                                $(that).parent().css('border', '1px solid #ccc');
+                                $(that).parent().css('border-top', 'none');
+                            }
+                            function jujiaos(that){
+                                    $(that).css('border', '1px solid #2196f3');
+                            }
+                            function gongsis(that){
+                                $(that).css('border', '1px solid #ccc');                                
+                            }
+                            var i = 0;
+                            function add(){
+                                ;
+                                var newObj = $('<div class="wangzhia"><input  class="wangzhi" type="name"  name="url_con[]" onfocus="jujiaos(this)" onblur="gongsis(this)" ><img src="__PUBLIC__/ydadmin/images/x.png" onclick="remove(this)"></div>');
+                                 $(".aaaaaa").append(newObj);
+                            }
+
+                            function remove(that){
+                                $(that).parent('div').remove();
+                                
+                            }
+                    </script>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司LOGO</td>
+                        <td style="width:60%;padding-left: 20PX;" class="filelogo"><img src="__PUBLIC__/Uploads/{$company['com_logo']}"><button class="danjishangchuang"><input type="file" value="" name="com_logo" id="shangchuang">上传LOGO</button></td>
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;line-height: 20px;">每个企业拥有独特性标志。建议使用200KB大小文件，宽度180*最大高度400的GIF或PNG格式图片，审核通过后将在云狄百科首页/详情页生效（审核通过生效）</td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;">公司地址</td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;" class="ypselect">
+                            <div data-toggle="distpicker">
+                                                    <div class="form-group col-lg-2">
+                                                          <label class="sr-only" for="province2">Province</label>
+                                                          <select name="com_province" class="form-control" id="province2" data-province="---- 选择省 ----"></select>
+                                                    </div>
+                                                    <div class="form-group col-lg-2">
+                                                          <label class="sr-only" for="city2">City</label>
+                                                          <select name="com_city" class="form-control" id="city2" data-city="---- 选择市 ----"></select>
+                                                    </div>
+                                                    <div class="form-group col-lg-2">
+                                                          <label class="sr-only" for="district2">District</label>
+                                                          <select name="com_district" class="form-control" id="district2" data-district="---- 选择区 ----"></select>
+                                                    </div>
+                                         </div>
+                            <input type="text" placeholder="详细地址" onfocus="jujiaos(this)" onblur="gongsis(this)" name="com_detailed" class="ypcity" value="{$company['com_detailed']}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">媒体报道</td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;">
+                            <ul class="ypnewsmain" id="media-ul">   
+                                <li>
+                                    <span class="yptjtitl">1. 公司杨绍华总裁赴深圳办事处调研</span>
+                                    <span class="laiyuan">新华网</span>
+                                    <i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i>
+                                    <i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>
+                                </li>
+                                <li><span class="yptjtitl">2. 杰赛科技珠海通信产业园一期工程建设项目顺利通过竣工现场验收  </span>
+                                    <span class="laiyuan">新华网</span>
+                                    <i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i>
+                                    <i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>
+                                </li>
+                            </ul>
+                            <div class="cl"></div>
+                            <a href="javascript:" class="danjitianjias" onclick="addnews()">点击添加</a></td>                       
+                    </tr>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-bottom: none;border-right: none;">公司荣誉相册</td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-bottom: none;border-right: none;">
+                            <div class="ypphoto">
+                                <div class="shanchuss" onclick="shanchuss(this);">×</div>
+                                <img src="__PUBLIC__/ydadmin/images/kefu.png">
+                                <div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30" onkeyup="javascript:setShowLength(this, 0, 'title_length');">
+                                    <span class="red title_length" ></span></div>
+                            </div>
+                            <div class="ypphoto">
+                                <div class="shanchuss" onclick="shanchuss(this);">×</div>
+                                <img src="__PUBLIC__/ydadmin/images/yuluanyp.png">
+                                <div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30">
+                                <span class="red title_length" ></span></div>
+                            </div>
+                            <div class="ypphoto">
+                                <div class="shanchuss" onclick="shanchuss(this);">×</div>
+                                <img src="__PUBLIC__/ydadmin/images/banner.jpg">
+                                <div class="ypphoinput"><input name="title" type="text" size="50" value="咨询" maxlength="30">
+                                <span class="red title_length" ></span></div>
+                            </div>
+                            <div class="cl"></div>
+                            <div style="position:relative">
+                            <input type="file" value="" name="com_image" id="shangchuangs">
+                            <button class="danjishangchuans">点击上传</button></td></div>                   
+                    </tr>
+                </table>
+            
+
+            </div>
+            <script type="text/javascript">
+            $('.ypphoto img').bind('mouseover',function(){
+                $(this).siblings('.shanchuss').show();
+                // $('.shanchuss').show();
+            })
+
+            $('.ypphoto img').bind('mouseout',function(){
+                $(this).siblings('.shanchuss').hide();
+            })
+
+            $('.shanchuss').bind('mouseover',function(){
+
+                $(this).show();
+
+            })
+            $('.shanchuss').bind('mouseout',function(){
+
+                $(this).hide();
+            })
+
+            function shanchuss(that){
+                $(that).parent('div').remove();
+            }
+
+            $('.ypphoto input').bind('focus',function(){
+                    $(this).parent().css('background','#fff');
+                    $(this).parent().css('border','1px solid #2196f3');
+                    $(this).siblings('span').show();
+                    $(this).css('background','#fff');
+            });
+            $('.ypphoto input').bind('blur',function(){
+                    $(this).parent().css('background','#2196f3');
+                    $(this).css('background','#2196f3');
+                    $(this).siblings('span').hide();
+                });
+            $('.ypphoinput input').bind('keyup',function(){
+                var rem =$(this).val().length;
+                $(this).siblings('span').html(rem+'/30');
+
+                // console.log(rem)
+                // console.log($(this).val().length);
+
+                // alert($(this).siblings('span').html());
+
+            });
+                    // 统计input框字数               
+                function setShowLength(obj, maxlength, id)
+                {
+                    var rem =obj.value.length/1024 - maxlength;
+                    var wid = id;
+                    if (rem < 0){
+                        rem = 0;
+                    }
+                   // console.log($(obj).siblings('span').html());
+
+                    // document.getElementsByClassName(wid)[0].innerHTML =  rem + "/30";
+                }
+
+            </script>
+
+                <div class="ypmain2">
+                    <div class="ypmaina">           
+                        <div class="ypmainam">
+                            <h4>公司简介</h4>
+                            <div class='ypfutext'>
+                                <label class="left-label col-lg-12">公司简介<span>*</span>:</label>
+                                             <div class="col-lg-12" style="z-index: 10">
+                                                    <script id="editor" type="text/plain" style="width:1024px;height:500px;" name=""></script>
+                                                        <script type="text/javascript"> 
+                                                            var ue = UE.getEditor('editor');
+                                            
+                                                        </script>  
+                                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ypmaina">           
+                        <div class="ypmainam">
+                            <h4>发展历程</h4>
+                            <div class='ypfutext'>
+                                 <!-- 发展历程 -->
+                                                <div class="col-lg-12" style="z-index: 10">
+                                                        <textarea name="com_history" id="myEditor2">{$company['com_history']}</textarea>  
+                                                        <script type="text/javascript"> 
+                                                        var editor2 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
+                                                            editor2.render("myEditor2");
+                                        
+                                                        </script>  
+                                                    </div>
+                        
+                                                <!-- 发展历程结束 -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ypmaina">           
+                        <div class="ypmainam">
+                            <h4>公司业务</h4>
+                            <div class='ypfutext'>
+                                 <!-- 公司业务 -->
+                                                <div class="col-lg-12" style="z-index: 10">
+                                                        <textarea name="com_service" id="myEditor3">{$company['com_service']}</textarea>  
+                                                        <script type="text/javascript"> 
+                                                        var editor3 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
+                                                            editor3.render("myEditor3");
+                                        
+                                                        </script>  
+                                                    </div>
+                                                <!-- 公司业务结束 -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ypmaina">           
+                        <div class="ypmainam">
+                            <h4>公司荣誉</h4>
+                            <div class='ypfutext'>
+                                <div class="col-lg-12" style="z-index: 10">
+                                                      <textarea name="com_honor" id="myEditor4" >{$company['com_honor']}</textarea>  
+                                                        <script type="text/javascript"> 
+                                                          var editor4 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
+                                                            editor4.render("myEditor4");
+                                             
+                                                        </script>  
+                                             </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ypmainb">           
+                        <div class="ypmainam">
+                            <h4>公司文化</h4>
+                            <div class='ypfutext'>
+                                <div class="col-lg-12" style="z-index: 10">
+                                                      <textarea name="com_honor" id="myEditor5" >{$company['com_culture']}</textarea>  
+                                                        <script type="text/javascript"> 
+                                                          var editor5 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
+                                                            editor5.render("myEditor5");
+                                             
+                                                        </script>  
+                                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ypsubmit">
+                        <input type="submit" class="tijiao">提交审核</input>
+                        <button class="yulan">预览</button>
+
+                    </div>
+                        
+                </div>
+            </form>
+        </div>
+
+    
+    </div>
+    <div class="ypnews">
+        <div class="yptianjia">
+            <div class="yptjheader">
+                <span>媒体报道</span>
+                <a href="javascript:" class="guanbi">×</a>
+            </div>
+            <div class="yptjmain">
+                <form active="" method="post" class="yptjform"> 
+                    标题：<input type="text" placeholder="请输入媒体报道标题" vlaute="" id="add_title"  name="med_title"><br><br>
+                    来源：<input type="text" placeholder="请输入媒体报道来源" vlaute="" id="add_source"  name="med_source"><br><br>
+                    网址：<input type="text" placeholder="请输入媒体报道网址" vlaute="" id="add_url" name="med_url"><br><br>
+                    <input type="reset" style="display: none;" class="yptjqk" name="">
+                </form>
+                <a href="javascript:" class="nesbaocui add_media">保存</a>
+                <a href="javascript:" class="nesquxiao guanbi" >取消</a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="xiugaissa">
+        <div class="yptianjia">
+            <div class="yptjheader">
+                <span>媒体报道</span>
+                <a href="javascript:" class="guanbi">×</a>
+            </div>
+            <div class="yptjmain">
+                <form active="" method="post" class="yptjform"> 
+                    标题：<input type="text" placeholder="请输入媒体报道标题" vlaute="" id="yptjtitlessa"  name="med_title"><br><br>
+                    来源：<input type="text" placeholder="请输入媒体报道来源" vlaute="" id="yptjlaiyuanssa"  name="med_source"><br><br>
+                    网址：<input type="text" placeholder="请输入媒体报道网址" vlaute="" name="med_url"><br><br>
+                    <input type="reset" style="display: none;" class="yptjqk" name="">
+                </form>
+                <a href="javascript:" class="nesbaocui " onclick="xiugaissaa(this)">保存</a>
+                <a href="javascript:" class="nesquxiao guanbi" >取消</a>
+            </div>
+        </div>
+    </div>
+    
+
+        <script type="text/javascript">
+        // 添加
+                function addnews(){
+                        $('.ypnews').show();
+                }
+                $('.guanbi').bind('click',function(){
+                    $('.ypnews').hide();
+                    $('.xiugaissa').hide();
+                    $('.yptjqk').click();
+                    
+                })
+
+            $(function(){
+                $(".nesbaocui").click(function(){
+                    var newObj = $('<li></li>');
+                    $(".ypnewsmain").append(newObj);
+                    var result1 = $("#yptjtitle").val();
+                    var result2 = $("#yptjlaiyuan").val();
+                    newObj.html((newObj.index()+1)+' . '+'<span class="yptjtitl">'+result1+'</span>'+' . '+'<span class="laiyuan">'+result2+'</span>'+'<i class="glyphicon glyphicon-pencil xiugai" onclick="xiugai(this)"></i><i class="glyphicon glyphicon-trash shanchu" onclick="shanchu(this)"></i>').attr("from","new");                  
+                    $('.ypnews').hide();
+                    $('.yptjqk').click();
+                });
+            });
+                // 删除
+                function shanchu(that){
+                    //获取属性也就是id值
+                    var id = $(that).attr('medid');
+                    //url
+                    var url = '/Index.php/Admin/';
+                    //ajax
+                    $post();
+                    $(that).parent('li').remove();
+
+
+                }
+                // 修改
+                function xiugai(that){
+                    $('.xiugaissa').show();
+                    $("#yptjtitlessa").val($(that).siblings('.yptjtitl').html());
+                    $("#yptjlaiyuanssa").val($(that).siblings('.laiyuan').html());
+                    // $(that).siblings('.yptjtitl').html($("#yptjtitlessa").val();
+                    // $(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val();
+                    // $('.xiugaissa').hide();
+                    // $('.yptjqk').click();
+                }
+
+                function xiugaissaa(that){
+
+                    $(that).siblings('.yptjtitl').html($("#yptjtitlessa").val());
+                    $(that).siblings('.laiyuan').html($("#yptjlaiyuanssa").val());
+                    $('.xiugaissa').hide();
+
+                }
+
+                $('.yptjform input').bind('focus',function(){
+                        $(this).css('border','1px solid #2196f3');
+                });
+                $('.yptjform input').bind('blur',function(){
+                    $(this).css('border','1px solid #ccc');
+                });
+
+        </script>
+        
+    <div class="tpfooter">
+        <p>Copyright © 2016-2025 <font style="color:#3c8dbc">云狄B2B</font> .保留一切权利</p>
+    </div>
+</body>
+<script>
+    // 媒体标题
+          //ajax 提交
+          var media_url = '/Index.php/Admin/Media/media_list';
+          $.post(media_url,function(data){
+                  if(data){
+                      $('#media-ul').append().html(data);
+                  }
+                  
+            
+          });
+
+          $('.add_media').click(function(){
+             // 媒体标题
+              var med_title = $('#add_title').val();
+              //来源
+              var med_source = $('#add_source').val();
+              //网址
+              var med_url = $('#add_url').val();
+              //ajax 提交
+              var media_url = '/Index.php/Admin/Media/add_media';
+              $.post(media_url,{'med_title':med_title,'med_source':med_source,'med_url':med_url},function(data){
+                      if(data){
+                          $('#media-ul').append().html(data);
+                      }
+                      
+                
+              });
+          });
+
+</script>
+
+</html>

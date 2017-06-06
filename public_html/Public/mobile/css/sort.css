@@ -1,0 +1,25 @@
+
+
+/*分类*/
+.y_content ul li{overflow: hidden;border-bottom: 1px solid #cccccc;background: #FFFFFF;}
+.y_content ul li a{display: block;font-size:0.2526rem;padding:0.2189rem 0.1684rem;overflow: hidden;color: #999999;}
+.y_content ul li a .sort_name{float: left;}
+.y_content ul li a .right_icon{float: right;}
+.y_content ul li a .right_icon img{display: block;width: 0.1347rem;}
+
+.y_content{margin: 0.741rem auto 0.833rem;background: #e4e5e9;}
+.y_content .y_banner img{width: 100%;display: block;}
+
+.y_content .y_bottom{padding: 0.2863rem 0;}
+.y_content .y_bottom p{color: #999999;font-size:  0.2021rem;text-align: center;line-height: 0.3031rem;}
+
+
+
+
+
+
+
+
+
+
+

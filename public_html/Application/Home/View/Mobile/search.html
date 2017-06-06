@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/Public/img/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />  
+	<title>云谱搜索</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/public.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/search.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/mobile/css/landscape.css">
+	<script type="text/javascript" src="__PUBLIC__/mobile/js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mobile/js/public.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/mobile/js/search.js"></script>
+</head>
+<style>
+::-moz-placeholder { color: #80b6df; }
+::-webkit-input-placeholder { color:#80b6df; }
+:-ms-input-placeholder { color:#80b6df; }
+</style>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<form>
+			<a class="sort_back" href="javascript:history.go(-1)"><img src="__PUBLIC__/mobile/img/sort_back.png"></a>
+			<div class="search_box">
+				<img src="__PUBLIC__/mobile/img/search_icon.png">
+				<input class="search" type="text"  value="" placeholder="请输入企业云谱名称">
+			</div>
+			<a class="sort_search" href="javascript:;" onclick="ssearch()">搜索</a>
+		</form>
+	</div>
+	
+	<div class="y_content">
+		<!-- 分类 -->
+		<ul class="sort_list">
+		</ul>
+
+
+		<include file="footer" />
+<script>
+	function ssearch(){
+		var name = $('.search').val();
+		if (name){
+			window.location.href="/mobile/search_com?name="+name;
+		}
+	}
+</script>
+</html>

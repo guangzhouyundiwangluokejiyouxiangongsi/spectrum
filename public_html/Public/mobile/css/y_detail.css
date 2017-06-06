@@ -1,0 +1,50 @@
+
+
+.y_content{margin: 0.741rem auto  0.67rem;background: #e4e5e9;}
+.y_content .y_banner img{width: 100%;display: block;}
+
+.y_content .message_box{background: #FFFFFF;padding: 0.2526rem 0.1684rem;}
+/*公司介绍*/
+.y_content .y_message .y_title{line-height: 0.3031rem;height: 0.3032rem;border-left:0.0842rem solid #2196f3;overflow: hidden;margin-bottom: 0.2rem;}
+.y_content .y_message .y_title span{font-size: 0.2526rem;color: #252525;margin-left: 0.1684rem;float: left}
+.y_content .y_message p{text-indent: 2em;text-align: justify;font-size: 0.2021rem;color: #666666;line-height: 0.3032rem;margin-bottom: 0.16rem;}
+.y_content .y_message .smalltitle{line-height: 0.3031rem;height: 0.3032rem;margin: 0.16rem 0;}
+.y_content .y_message .smalltitle span{font-size: 0.2189rem;color: #252525;display: block;}
+.y_content .y_message h4{font-size: 0.2189rem;color: #252525;display: block;line-height: 0.3031rem;height: 0.3032rem;margin: 0.16rem 0;}
+/*公司业务*/
+.y_content .y_message ul.company_service{color: #666666;}
+.y_content .y_message ul.company_service li{font-size: 0.2021rem;line-height: 0.3032rem;padding-left: 0.2526rem;margin-left: 2em;}
+.y_content .y_message ul.company_service li p{font-size: 0.2021rem;text-indent: 0;margin: 0;}
+.y_content .y_message ul.company_service li span{margin-left: -0.2526rem;float: left;}
+/*公司荣誉*/
+.y_content .y_message img{width:1.9200rem;}
+
+/*.y_content .y_message.honor img{display: block;float: right;width:1.9200rem;height: 1.5832rem;margin:0 0 0.1rem 0.1rem;}*/
+/*媒体报道 官网直达*/
+.y_content .y_message p a{color: #2196f3;}
+/*官网直达*/
+.y_content .y_message.through p{text-indent: 0;margin-left: 1em;}
+/*媒体报道*/
+.y_content .y_message.media p{text-indent: 0;margin-left: 1em;}
+
+
+.y_content .y_bottom{padding: 0.2863rem 0;}
+.y_content .y_bottom p{color: #999999;font-size:  0.2021rem;text-align: center;line-height: 0.3031rem;}
+
+
+/*底部导航*/
+.footer {overflow: hidden;margin: 0 auto;background: #343434;position: fixed;bottom: 0;width: 100%;z-index: 20;}
+.footer a{padding: 0.15rem 0;display:block;width: 33.333%;text-align: center;float: left;color: #6a6a6a;font-size:0.2021rem;line-height: 0.2863rem;color: #FFFFFF;cursor: pointer;}
+.footer .num img{width:0.2358rem;}
+.footer .goodnum img{width:0.2695rem;margin-bottom: -0.0253rem;}
+.footer .share img{width:0.2189rem;margin-bottom:-0.0253rem;}
+
+.footer .num {padding: 0.195rem 0;background: url(../img/y_detail_line.png) no-repeat right center;background-size: auto 40%;}
+.footer .goodnum {padding: 0.179rem 0;background: url(../img/y_detail_line.png) no-repeat right center;background-size: auto 40%;}
+.footer .share {padding: 0.17rem 0;}
+
+.footer .num i{font-style: normal;}
+.footer .goodnum i{font-style: normal;}
+
+
+

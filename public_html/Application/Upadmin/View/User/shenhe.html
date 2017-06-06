@@ -1,0 +1,399 @@
+<include file="Public/_meta" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/ydadmin/css/yunpu.css">
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/ydadmin/js/index.js"></script>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.data.js"/>
+     <load href="__PUBLIC__/ydadmin/js/global.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/distpicker.js"/>
+    <load href="__PUBLIC__/jQueryDistpicker/js/main.js"/>
+    <load href="__PUBLIC__/ueditor/utf8-php/ueditor.config.js"/>
+     <load href="__PUBLIC__/ueditor/utf8-php/ueditor.all.min.js"/>
+     <script type="text/javascript" src="__PUBLIC__/webuploader/0.1.5/webuploader.min.js"></script>    <!-- 引用插件js -->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/webuploader/0.1.5/webuploader.css" />
+<!--_meta 作为公共模版分离出去-->
+<body>
+<!--_header 作为公共模版分离出去-->
+<include file="Public/_header" />
+<!--/_header 作为公共模版分离出去-->
+<!--_menu 作为公共模版分离出去-->
+<include file="Public/_menu" />
+<!--/_menu 作为公共模版分离出去-->
+<style>
+.input{    
+    width: 60px;
+    height: 21px;
+    font-size: 16px;
+    border:1px solid #ddd;
+}
+.Hui-article-box2 {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    left: 199px;
+    z-index: 1;
+    background-color: #fff;
+}
+.tijiao{
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+</style>
+<section class="Hui-article-box2" style="height:100%">
+    <body style="min-height:1000px;background:#ecf0f5;">
+    <div class="ypright" style="position:relative;">
+
+        <div class="ypheader">
+            <h4><i class="glyphicon glyphicon-book"></i>公司云谱</h4>
+        </div>
+
+        <div class="ypmain">
+            <div class="ypmain1">
+            <form action="{:U('/Admin/CompanyInfo/add_info')}" method="post" enctype="multipart/form-data">
+             <input type="hidden" name="com_id" value="{$company['com_id']}">
+                <table width="100%">
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司名称</td>
+                        <td style="width:60%;padding-left: 20PX;"><input onfocus="jujiao(this)" onblur="gongsi(this)" type="name" placeholder="请输入公司名称" name="com_name" value="{$company['com_name']}" readonly="readonly"></td>
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;">输入公司全称  （例如：广州XX设备有限公司）</td>
+                    </tr>
+                    <tr style="height:120px;">
+                        <td style="width:10%;padding-left: 20PX;border-left: none;">公司网址</td>
+                        <td style="width: 60%;padding-left: 20PX;line-height: 20px;border-right: none;min-height:120px;border-left: none;" class="wangzhib"><div class="aaaaaa"></div>
+                        <empty name="company['com_url']">
+                            <input  class="wangzhi" type="name" value=""  name="com_url[]" onfocus="jujiaos(this)" onblur="gongsis(this)">
+                        </empty>
+                            <foreach name="company['com_url']" item="urllist">
+                        <div class="wangzhia">
+                            
+                            <input  class="wangzhi" type="name" readonly="readonly" value="{$urllist}"  name="com_url[]" onfocus="jujiaos(this)" onblur="gongsis(this)">
+                 <img src="__PUBLIC__/ydadmin/images/x.png" ></div>
+                            </foreach>
+                            <!-- <a herf="javascript:" class="danjitianjia" onclick ="add()">点击添加</a></td> -->
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;">保证每个网址的正确性，每个框填写一个网址</td>
+                   </tr> 
+                      <script type="text/javascript">
+                            function jujiao(that){
+                                    $(that).parent().css('border', '1px solid #2196f3');
+                            }
+                            function gongsi(that){
+                                $(that).parent().css('border', '1px solid #ccc');
+            
+                            }
+                            function jujiaos(that){
+                                    $(that).css('border', '1px solid #2196f3');
+                            }
+                            function gongsis(that){
+                                $(that).css('border', '1px solid #ccc');                                
+                            }
+                            var i = 0;
+                            function add(){
+                                
+                                var newObj = $('<div class="wangzhia"><input  class="wangzhi" type="name"  name="com_url[]" maxlength="88" onfocus="jujiaos(this)" onblur="gongsis(this)" ><img src="__PUBLIC__/ydadmin/images/x.png" onclick="remove(this)"></div>');
+                                 $(".aaaaaa").append(newObj);
+                            }
+
+                            function remove(that){
+                                $(that).parent('div').remove();
+                                
+                            }
+
+                            function add_input(){
+                                var input = $('<div class="wangzhia"><input  class="zhuying" type="name"  name="com_scname[]" maxlength="6" onfocus="jujiaos(this)" onblur="gongsis(this)" style="border: 1px solid #ccc;width: 127px;"><img src="__PUBLIC__/ydadmin/images/x.png" onclick="remove(this)"></div>')
+                                $('.input_class').append(input);
+                            }
+                    </script>
+                   <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">公司LOGO</td>
+                        <td style="width:60%;padding-left: 20PX;" class="filelogo"><img src="{$company['com_logo']}" id="logo"><div id="up_logo"></div><input type="hidden" name="com_logo" value="{$company['com_logo']}" id="input_logo"></td>
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;line-height: 20px;">每个企业拥有独特性标志。建议使用200KB大小文件，宽度180*最大高度400的GIF或PNG格式图片，审核通过后将在云狄百科首页/详情页生效（审核通过生效）</td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">主营产品</td>
+                        <td style="width:60%;padding-left: 20PX;">
+                        <span class="input_class">
+                        <foreach name="company['com_scname']" item="vv">
+                        <div class="wangzhia"><input  class="zhuying" type="name"  name="com_scname[]" maxlength="6" value="{$vv}" onfocus="jujiaos(this)" onblur="gongsis(this)" style="border: 1px solid #ccc;width: 127px;"><img src="__PUBLIC__/ydadmin/images/x.png" onclick="remove(this)"></div>
+                        </foreach>
+                        </span>
+
+                        <td style="width:30%;padding-left: 20PX;color:red;border-right: none;line-height: 20px;">每个框填写一个关键词，限于6个字内，利于搜索引擎优化推广以及让您的客户更加容易找到产品。</td>
+                    </tr>
+                    <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;">公司地址 </td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;" class="ypselect">
+                            <div data-toggle="distpicker">
+                                        <div class="form-group col-lg-2">
+                                              <label class="sr-only" for="province2">Province</label>
+                                              <select name="com_province" class="form-control" disabled="disabled" id="province2" data-province="{$company['com_province']}">
+                                              </select>
+                                        </div>
+                                        <div class="form-group col-lg-2">
+                                              <label class="sr-only" for="city2">City</label>
+                                              <select name="com_city" class="form-control" id="city2" disabled="disabled" data-city="{$company['com_city']}"></select>
+                                        </div>
+                                        <div class="form-group col-lg-2">
+                                              <label class="sr-only" for="district2">District</label>
+                                              <select name="com_district" class="form-control" disabled="disabled" id="district2"  data-district="{$company['com_district']}"></select>
+                                        </div>
+                                </div>
+                            <input type="text" disabled="disabled" placeholder="详细地址" maxlength="50" onfocus="jujiaos(this)" onblur="gongsis(this)" name="com_detailed" class="ypcity" value="{$company['com_detailed']}">
+                        </td>
+                    </tr>
+                    
+                     <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-right: none;">媒体报道</td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-right: none;">
+                            <ul class="ypnewsmain" id="media-ul">   
+                               
+                            </ul>
+                            <div class="cl"></div>
+                        </td>
+                    </tr>
+                   <tr>
+                        <td style="width:10%;padding-left: 20PX;border-left: none;border-bottom: none;border-right: none;">公司荣誉相册</td>
+                        <td colspan="2" style="width:90%;padding-left: 20PX;border-bottom: none;border-right: none;" id="img_image">
+                            <span id="
+                            "></span>
+                            
+                            <div class="cl"></div>
+                            <div style="position:relative">
+                        </div>></td>
+                    </tr>
+                </table>
+            
+
+             
+            <script type="text/javascript">
+            function img_uploads(){
+                $('.ypaddphoto').css('visibility','visible');
+            }
+
+            function imgmouseover(obj,bid){
+                $('#'+obj.id).siblings('#'+bid).show();
+                $('#'+bid).show();
+            }
+
+            function imgmouseout(obj,bid){
+                $('#'+obj.id).siblings('#'+bid).hide();
+                $('#'+bid).hide();
+            }
+
+            function xmouseover(obj){
+                 $('#'+obj.id).show();
+            }
+            function xmouseout(obj){
+                $('#'+obj.id).hide();
+            }
+            
+            function shanchuss(that,del){
+                $.post('/admin/CompanyInfo/img_del',{'id':del},function(res){
+                    if (!res){
+                        alert('删除失败');
+                    }else{
+                        $(that).parent('div').remove();
+                    }
+                })
+            }
+
+            function input_focus(obj){
+                $('#'+obj.id).parent().css('background','#fff');
+                $('#'+obj.id).parent().css('border','1px solid #2196f3');
+                $('#'+obj.id).siblings('span').show();
+                $('#'+obj.id).css('background','#fff');
+                $('#'+obj.id).keyup();
+            }
+
+            function input_blur(obj,uid){
+                $('#'+obj.id).parent().css('background','#2196f3');
+                $('#'+obj.id).css('background','#2196f3');
+                $('#'+obj.id).siblings('span').hide();
+                $.post('/admin/CompanyInfo/save',{'img_id':uid,'img_title':obj.value},function(res){
+                    if(!res){
+                        // alert('修改失败');
+                    }
+                })
+            }
+
+            function input_keyup(obj){
+                var rem =obj.value.length;
+                $('#'+obj.id).siblings('span').html(rem+'/30');
+            }
+
+            </script>
+                <br><br>
+                <h4 style="text-align: center;">公司简介</h4>
+                <table style="border: 1px solid;">
+                <td >{$company['com_synopsis']}</td>
+                </table>
+                
+                <br><br>
+                <h4 style="text-align: center;">发展历程</h4>
+                <table style="border: 1px solid;">
+                <td >{$company['com_history']}</td>
+                </table>
+
+                <br><br>
+                <h4 style="text-align: center;">公司业务</h4>
+                <table style="border: 1px solid;">
+                <td >{$company['com_service']}</td>
+                </table>
+
+                <br><br>
+                <h4 style="text-align: center;">公司荣誉</h4>
+                <table style="border: 1px solid;">
+                <td >{$company['com_honor']}</td>
+                </table>
+
+                <br><br>
+                <h4 style="text-align: center;">公司文化</h4>
+                <table style="border: 1px solid;">
+                <td >{$company['com_culture']}</td>
+                </table>
+
+                  <br>
+
+                  <div style="text-align: center;"><textarea name="" id="beizhu" cols="30" rows="10" style="width: 550px;height: 125px;" placeholder="备注"></textarea></div>
+                  <br>
+                    <div class="ypsubmit" style="text-align: center;">
+                        <button class="tijiao" onclick="return shenhe(1)">通过</button>
+                        <button class="tijiao" onclick="return shenhe(2)">未通过</button>
+                        <button class="tijiao" onclick="return shenhe(0)">未审核</button>
+                        <button class="tijiao" onclick="return fanhui()">返回</button>
+                    </div>
+                    <br>
+
+                </div>
+            </form>
+            </div>
+        </div>
+<script>
+    function shenhe(val)
+    {   
+        var beizhu = $('#beizhu').val();
+        var com_id = '{$company['com_id']}';
+        $.post('/Upadmin/User/audit',{'beizhu':beizhu,'com_id':com_id,'status':val},function(res){
+            if (res){
+                alert('操作成功');
+                // window.opener=null;window.close();
+                window.location.href="/Upadmin/User/User_list";
+            }else{
+                alert('操作失败');
+            }
+        })
+        return false;
+    }
+
+    function fanhui(){
+        window.location.href="/Upadmin/User/User_list";
+        return false;
+    }
+</script>
+    
+    </div>
+
+    <div class="ypnews">
+        <div class="yptianjia">
+            <div class="yptjheader">
+                <span>媒体报道</span>
+                <a href="javascript:" class="guanbi">×</a>
+            </div>
+            <div class="yptjmain">
+                <form active="" method="post" class="yptjform"> 
+                    标题：<input type="text" disabled="disabled" placeholder="请输入媒体报道标题" vlaute="" id="add_title"  name="med_title"><br><br>
+                    来源：<input type="text" disabled="disabled" placeholder="请输入媒体报道来源" vlaute="" id="add_source"  name="med_source"><br><br>
+                    网址：<input type="text" disabled="disabled" placeholder="请输入媒体报道网址(注意:不带http://)" vlaute="" id="add_url" name="med_url"><br><br>
+                    <input type="reset" style="display: none;" class="yptjqk" name="">
+                </form>
+                <a href="javascript:" class="nesbaocui add_media">保存</a>
+                <a href="javascript:" class="nesquxiao guanbi" >取消</a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="xiugaissa">
+        <div class="yptianjia">
+            <div class="yptjheader">
+                <span>媒体报道</span>
+                <a href="javascript:" class="guanbi">×</a>
+            </div>
+            <div class="yptjmain">
+                <form active="" method="post" class="yptjform"> 
+                    <input type="hidden" name="med_id" value="" id="hidden_id">
+                    标题：<input type="text" disabled="disabled" placeholder="请输入媒体报道标题" vlaute="" id="save_title"  name="med_title"><br><br>
+                    来源：<input type="text" disabled="disabled" placeholder="请输入媒体报道来源" vlaute="" id="save_source"  name="med_source"><br><br>
+                    网址：<input type="text" disabled="disabled" placeholder="请输入媒体报道网址" vlaute="" id="save_url" name="med_url"><br><br>
+                    <input type="reset" style="display: none;" class="yptjqk" name="">
+                </form>
+                <a href="javascript:" class="nesbaocui save_med" onclick="xiugaissaa(this)">保存</a>
+                <a href="javascript:" class="nesquxiao guanbi" >取消</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</section>
+<include file="Public/_footer" />
+<script type="text/javascript">
+
+$(function(){
+    $('.table-sort').dataTable({
+        "aaSorting": [[ 1, "desc" ]],//默认第几个排序
+        "bStateSave": true,//状态保存
+        "aoColumnDefs": [
+          //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+          {"orderable":false,"aTargets":[0,8,9]}// 制定列不参与排序
+        ]
+    });
+    $('.table-sort tbody').on( 'click', 'tr', function () {
+        if ( $(this).hasClass('selected') ) {
+            $(this).removeClass('selected');
+        }
+        else {
+            table.$('tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+    ajax_img();
+        function img_save(){
+            $.post('/admin/CompanyInfo/img_add',$('#formall').serialize(),function(res){
+                if(res){
+                    $('#fileList2').html(''); 
+                    $('.ypaddphoto').css('visibility','hidden');
+                    $('.ypaddphotook').css('visibility','hidden');
+                    ajax_img();
+                }else{
+                    alert('保存失败');
+                }
+            })
+        }
+
+        function ajax_img(){
+            var store_id = '{$company[com_storeid]}';
+            $.post('/Upadmin/User/ajax_img',{'store_id':store_id},function(res){
+                $('#img_image').html(res);
+            })
+        }
+
+           
+    </script>
+
+        
+        
+</body>
+
+
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

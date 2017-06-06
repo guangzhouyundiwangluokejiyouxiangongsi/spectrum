@@ -1,0 +1,37 @@
+<header>
+	<nav class="bzhuce"><a target="_blank" href="http://www.yundi88.com/User/reg.html">注册</a><a target="_blank" href="http://www.yundi88.com/User/login.html">登陆</a>			
+		</nav>
+	<div class="cl"></div>
+	<div class="bheader">
+		<a target="_blank" href="index/index"><img src="{$system.logo}"></a>
+
+		<div class="bsearch">
+				<input type="text" placeholder="请输入企业名称" name="com_name">
+				<a onClick="return bsearch()"><img src="__PUBLIC__/ydhome/images/search.png" style="cursor:pointer;"></a>
+				</div>
+		<div class="cl"></div>
+	</div>
+		<div class="cl"></div>
+	<div class="navss">
+		<ul>
+		<foreach name="navigation" item="vv">
+			<li><a href="{$vv.url}" <?php if($vv['is_new_open']) echo 'target="_blank"';?>>{$vv.navigation}</a></li>
+		</foreach>
+			<!-- <div class="cl"></div> -->
+		</ul>
+	</div>
+</header>
+<script>
+	var uname = '{:getuname()}';
+	if (uname) $('.bzhuce').html('<a target="_blank" href="http://www.yundi88.com/User/login.html">'+uname+'</a><a target="_blank" href="/index/logout">退出</a>');
+
+	function bsearch()
+	{	
+		var com_name = $('.bsearch input').val();
+		if (com_name){
+			window.open('/index/search?com_name='+com_name);
+		}else{
+			alert('请输入企业名称');
+		}
+	}
+</script>

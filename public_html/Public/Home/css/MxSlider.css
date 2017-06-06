@@ -1,0 +1,75 @@
+
+.MxSlider{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.mx-slider_wrap{
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.mx-slide{
+	position: absolute;
+	width: 100%;
+	display: table;
+	float: left;
+	left: 0%;
+}
+.mx-slide img{
+	width: 180px;
+	height:87px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* Navigation */
+.mx-navigation{
+	position: relative;
+	float: left;
+	width: 100%;
+	top: 98%;
+	z-index: 888;
+}
+.mx-prev, .mx-next{
+	display: table;
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	border:1px solid #ccc;
+	color:#999999;
+}
+.mx-prev{
+	/*float: left;*/
+	position: absolute;
+	right:14%;
+	padding-left: 3px;
+
+}
+.mx-prev:hover{background:#ccc;border:1px solid #999999;}
+.mx-next:hover{background:#ccc;border:1px solid #999999;}
+.mx-next{position:absolute;right:14px;padding-left: 3px;}
+
+.mx-nav_dots{position: absolute;width: 10%;top: 87%;right:4%; text-align: center;z-index: 889;}
+.mx-nav_dots span{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin: 3px;
+	font-size: 0px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	/*border: 2px solid #b2b2b2;*/
+	background-color: #b2b2b2;
+	cursor: pointer;
+}
+.mx-nav_dots span.dotActive{
+	background-color: #008cba;
+}

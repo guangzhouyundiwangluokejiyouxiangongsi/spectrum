@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+	<link rel="shortcut icon" href="__PUBLIC__/img/favicon.ico" type="image/x-icon" />
+	<title>企业百科</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/baike.css">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/ydhome/css/MxSlider.css">
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/benner.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/scroll_image.js"></script>
+
+	<script type="text/javascript" src="__PUBLIC__/ydhome/js/MxSlider.js"></script>
+	
+</head>
+<body class="bodyHei">
+<!-- 头部开始 -->
+
+	<include file="Public/header" />
+	<!-- 头部结束 -->
+<div class="cl"></div>
+	<!-- 主题内容开始 -->
+	<div style="border-bottom: 4px solid #00b163;">
+		<main class="main" style="display: block;">
+		<!-- benner -->
+			<div class="banner bannersss" id="banner" >
+				<div class="bannerl">
+					<div class="bannerl1"><img src="{:templogo($company['com_storeid'],250,250)}"></div>
+					<div class="bannerl2">
+						<h3>公司简介</h3>
+						<p class="bannerl2p">{$company['com_synopsiss']}</p>
+						<h3>主营产品</h3>
+						<p class="bannerl2p">{:$company['com_scname']}</p>
+						<h3>公司地址</h3>
+						<p>{$company['com_province']}{$company['com_city']}{$company['com_district']}{$company['com_detailed']}</p>
+						<h3>公司网址</h3>
+						<p>
+							<foreach name="company['com_url']" item="vo">
+							<a href="http://{$vo}" target="_blank">{$vo}</a>
+							<php>break;</php>
+							</foreach>
+						</p>
+					</div>
+				</div>
+				<div class="bannerr">
+						<a href="#" class="d1" style="background:url(__PUBLIC__/img/xiangxi1.png)no-repeat  center  center ;background-size:100% auto;" target="_blank"></a>
+						<a href="#" class="d1" style="background:url(__PUBLIC__/img/xiangxi2.png)no-repeat  center center ;background-size:100% auto;" target="_blank"></a>
+						<div class="d2" id="banner_id">
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<script type="text/javascript">bannerr()</script>
+				</div>
+
+				<!-- <a href="#" class="d1" style="background:url(images/bennerss.png) center no-repeat;" target="_blank"></a>
+				<a href="#" class="d1" style="background:url(images/bennerss.png) center no-repeat;" target="_blank"></a> -->
+				<div class="cl"></div>
+			</div>
+			</main>
+		</div>
+		<main class="main">
+		<div style="display: none;" id="com_id">{$company['com_id']} </div>
+		<div class="cl"></div>	
+			<!--顶部  -->
+		<div class="detailstop">
+			<span class="detailiuluan">浏览次数：<font style="color:#999">{$company['com_visit']}</font></span> |
+			<span class="detailgood" id="com_good" comid="{$company['com_id']}">
+					<img src="__PUBLIC__/ydhome/images/dianzuan1.png" class="detailgood1">
+					<img src="__PUBLIC__/ydhome/images/dianzuan2.png" class="detailgood2" style="display: none"><span id="com_praise">{$company['com_praise']}</span></span> |
+			<span class="detaifengxiang">
+			<script type="text/javascript">
+					$(function(){
+						$('.detailgood1').bind('click',function(){
+							$.post('/CompanyInfo/ajax_thumb',{'id':$('#com_id').html()},function(res){
+								if (res.status == 1){
+									$('#com_praise').html(parseInt($('#com_praise').html())+1);
+									$('.detailgood1').hide();
+									$('.detailgood2').show();
+								}else{
+									alert(res.msg);
+								}
+							})
+						});
+
+
+					})
+			
+			</script>
+		<div class="jiathis_style">
+			<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank" style="margin-right:0px;margin-left: 4px;">分享</a>
+			<a class="jiathis_button_tsina" ></a>
+			<a class="jiathis_button_qzone" ></a>
+		</div>
+		<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" ></script>
+		
+			</span>
+		</div>
+
+		<div class="baikemain">
+			<div class="baikemainl">
+				<div id="baikemainlone">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司介绍</h3>
+					<p>{$company['com_synopsis']}</p>
+				</div>
+				<div id="baikemainltwo">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">发展历程</h3>
+					<p>{$company['com_history']}</p>
+				</div>
+				<div id="baikemainlthree">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司业务</h3>
+					<p>{$company['com_service']}</p>
+				</div>
+				<div id="baikemainlfour">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司荣誉</h3>
+					<div class="baikemainlfour1">
+						{$company['com_honor']}
+					</div>
+					<div class="baikemainlfour2">
+						<!-- <a href="#"><img src="__PUBLIC__/ydhome/images/baikemainlfour222.png"></a> -->
+					</div>		
+					<div class="cl"></div>	
+				</div>
+				<div id="baikemainlfive">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司文化</h3>
+						{$company['com_culture']}
+				</div>
+				<div id="baikemainlsex">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">官网直达</h3>
+						<p>
+							<foreach name="company['com_url']" item="urllist">
+								<a href="http://{$urllist}" target="_blank">{$urllist}</a>&nbsp;
+							 </foreach>
+						</p>	
+				</div>
+				<div id="baikemainlsenve">
+					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">媒体报道</h3>
+						<foreach name="media" item="medlist">	
+							<p><a href="http://{$medlist['med_url']}" target="_blank">{$medlist['med_title']}</a> .  {$medlist['med_source']}</p>	
+						</foreach>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="baikemainr">
+				<div class="baikemainrm" id="boxss" style="display:none">
+					<a href="javascript:" class="baikemainlone">公司介绍</a>
+					<a href="javascript:" class="baikemainltwo">发展历程</a>
+					<a href="javascript:" class="baikemainlthree">公司业务</a>
+					<a href="javascript:" class="baikemainlfour">公司荣誉</a>
+					<a href="javascript:" class="baikemainlfive">公司文化</a>
+					<a href="javascript:" class="baikemainlsex">官网直达</a>
+					<a href="javascript:" class="baikemainlsenve">媒体报道</a>
+				</div>
+				<script type="text/javascript">
+						$(function(){
+
+							$('.baikemainlone').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlone").offset().top},500);
+							});
+							$('.baikemainltwo').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainltwo").offset().top},500);
+							});
+							$('.baikemainlthree').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlthree").offset().top},500);
+							});
+							$('.baikemainlfour').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlfour").offset().top},500);
+							});
+							$('.baikemainlfive').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlfive").offset().top},500);
+							});
+							$('.baikemainlsex').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlsex").offset().top},500);
+							});
+							$('.baikemainlsenve').bind('click',function(){
+									// jquery操作滚动条滚动到指定位置
+									$("html,body").animate({scrollTop:$("#baikemainlsenve").offset().top},500);
+							});
+
+
+		// @ 给窗口加滚动条事件
+		$(window).scroll(function(){
+			// 获得窗口滚动上去的距离
+			var ling = $(document).scrollTop();
+
+			
+			var bodyHei=$('.bodyHei').height();
+			var windowHei=$(window).height(); 
+			var footerHei=$('footer.footer').height();
+			var footer_padT= parseInt($('footer.footer').css('paddingTop') );
+			var maxFooterHei=bodyHei-windowHei-footerHei-footer_padT;
+			
+			// 在标题栏显示滚动的距离
+			// document.title = ling;
+			// 如果滚动距离大于400的时候让滚动框出来
+			if(ling>400){
+				$('#boxss').show();
+				console.log(ling)
+			}
+			if(455<ling && ling<900){
+				// 让第一层的数字隐藏，文字显示，让其他兄弟元素的li数字显示，文字隐藏
+				$('#boxss').removeClass('baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm');
+
+			}else if(900<ling && ling<1395){
+				$('#boxss').removeClass('baikemainrm baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm1');
+			}else if(1395<ling && ling<2313){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm2');
+			}else if(2313<ling && ling<2413){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm3');
+			}else if(2413<ling && ling<2453){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');
+			}else if(2413<ling && ling<2523){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm6').addClass('baikemainrm5');
+			}else if(2665<ling && ling<2765){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5').addClass('baikemainrm6');
+			}else if(2547==ling){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm3');				
+			}else if(2781==ling){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');				
+			}else if(2785==ling){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');				
+			}else if(2955==ling){
+				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm6').addClass('baikemainrm5');				
+			}
+			if(ling>maxFooterHei || ling<420){
+				// $('#box').css('display','none');  // @ 这一句和下一句效果一样。
+				$('#boxss').hide();
+			}
+			
+		})
+			
+						
+	})
+
+				</script>
+			</div>
+			<div class="cl"></div>
+		</div>	
+	</main>
+
+<include file="Public/footer" />
+</body>
+</html>
