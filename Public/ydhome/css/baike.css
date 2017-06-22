@@ -5,7 +5,7 @@ a{text-decoration: none;}
 img{outline: none;border: none;}
 /*导航*/
 header{width:100%;min-height:60px;position:relative;}
-header .bzhuce{float:right;}
+header .bzhuce{float:right;width: 9%}
 header .bzhuce a{color:#333;font-size:12px;margin-right: 20px;line-height:20px;}
 header .bheader{width:1200px;margin:0 auto;}
 header .bheader a{display:inline-block;width:220px;float:left;}
@@ -213,9 +213,9 @@ header .navss ul li:hover{background:#029fd3;}
 .footer .pr .prc{ display:inline-block;*display:inline;*zoom:1;overflow: hidden;height: 210px;float:left;}
 
 .footer .pr .Tphone{float:left;width:300px;border-left: 1px solid #ccc;height:150px;margin-left: 80px;padding-left: 20px;margin-top:20px;padding-top: 35px;}
-.footer .pr .Tphone h2{color:#1691BD;font-size:18px;}						
-.footer .pr .Tphone a{display:inline-block;width:150px;height:30px;border-radius:5px;line-height: 30px;border:1px solid #1691BD;color:#1691BD;margin-top: 10px;}
-.footer .pr .Tphone a:hover{color:#fff;background:#1691BD;}
+.footer .pr .Tphone h2{font-weight: 500;color:#f92246;font-size:18px;}						
+.footer .pr .Tphone a{display:inline-block;width:150px;height:30px;border-radius:5px;line-height: 30px;border:1px solid #f92246;color:#f92246;margin-top: 10px;}
+.footer .pr .Tphone a:hover{color:#fff;background:#f92246;}
 
 .footer dl{ width: 150px; height:210px; float:left;}
 .footer dl dt{ height:60px; font-size:15px; line-height:60px;}
@@ -225,7 +225,7 @@ header .navss ul li:hover{background:#029fd3;}
 .footer .pr .right h1{ font-size:20px; text-align:center; color:#008cba;}
 .footer .pr .right p{ line-height:40px; font-size:12px; color:#757575;}
 .footer .pr .right .kf{ width:120px; height:30px; border:1px solid #008cba; color:#008cba; line-height:30px; font-size:12px; margin:0 auto; border-radius:5px;}
-.footer h6{ width:1200px; line-height:45px; margin:0 auto; text-align:center; font-size:12px;}
+.footer h6{ width:1200px; line-height:45px;font-weight:normal; margin:0 auto; text-align:left; font-size:12px;}
 .footer h6 a{ color:#757575;}
 
 .footer footer{/*  margin:50px auto; */ font-size:14px; line-height:30px; text-align:center;background: none;padding-bottom: 20px;}

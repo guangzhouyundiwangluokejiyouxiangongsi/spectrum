@@ -9,6 +9,15 @@ class IndexController extends CommonController {
      public function _initialize()
     {   
         if (is_mobile()) redirect('/Mobile/index');
+        $this->footer = M('article_cat','','DB_CONFIG2')->where(array('parent_id'=>0,'show_in_nav'=>1))->order('sort_order')->limit(5)->select();
+        foreach($this->footer as $vv){
+            $res[] = M('article','','DB_CONFIG2')->where(array('cat_id'=>$vv['cat_id'],'is_open'=>1))->select();
+        }
+        $this->footerlist = $res;
+        $this->assign('footerlist',$this->footerlist);
+        $this->link = M('friend_link','','DB_CONFIG2')->where(array('is_show'=>1))->order('orderby')->select();
+        $this->assign('footer',$this->footer);
+        $this->assign('link',$this->link);
         $this->navigation = M('navigation')->where(array('is_show'=>1,'pid'=>0))->select();
         $this->assign('navigation',$this->navigation);
         $this->system = M('system')->find();
