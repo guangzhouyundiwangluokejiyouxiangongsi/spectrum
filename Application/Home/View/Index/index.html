@@ -131,21 +131,21 @@
 						<div>
 							<foreach name="shuffling2" item="vv" key="kk">
 							<php>if ($kk < 3){</php>
-							<a <?php if($vv['is_new_open'])echo 'target="_blank"';?> href="{$vv.url}"><img src="{$vv.img}" alt="" /></a>
+							<a <?php if($vv['is_new_open'])echo 'target="_blank"';?> href="{$vv.url}"><img src="{:editorimg($vv[img],180,90);}" alt="" /></a>
 							<php>}</php>
 							</foreach>
 						</div>
 						<div>
 							<foreach name="shuffling2" item="vo" key="ko">
 							<php>if ($ko < 6 && $ko >2){</php>
-							<a <?php if($vo['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{$vo.img}" alt="" /></a>
+							<a <?php if($vo['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{:editorimg($vo[img],180,90);}" alt="" /></a>
 							<php>}</php>
 							</foreach>									
 						</div>
 						<div>
 							<foreach name="shuffling2" item="vs" key="ks">
 							<php>if ($ks < 9 && $ks > 5){</php>
-							<a <?php if($vs['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{$vs.img}" alt="" /></a>
+							<a <?php if($vs['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{:editorimg($vs[img],180,90);}" alt="" /></a>
 							<php>}</php>
 							</foreach>
 						</div>

@@ -39,7 +39,7 @@ class ShufflingModel extends Model
 		$p = getpage($count,15);
 		$shuffling = M('shuffling')->order('orderid')->limit($p->firstRow,$p->listRows)->select();
 		$array = array('不显示','显示');
-		$array2 = array('新窗口','原窗口');
+		$array2 = array('原窗口','新窗口');
 		foreach($shuffling as &$vv){
 			$vv['is_new_open'] = $array2[ $vv['is_new_open'] ];
 			$vv['is_show'] = $array[ $vv['is_show'] ];
