@@ -4,9 +4,9 @@
 			<dt><i class="Hui-iconfont">&#xe613;</i> 网站管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd <?php if(CONTROLLER_NAME == 'Web')echo 'style="display:block"';?>>
 				<ul>
-					<li><a href="{:U('Web/system')}" title="导航设置" <?php if(ACTION_NAME == 'system')echo 'style="color: #148cf1;"'?>>系统设置</a></li>
+					<li><a href="{:U('Web/system')}" title="系统设置" <?php if(ACTION_NAME == 'system')echo 'style="color: #148cf1;"'?>>系统设置</a></li>
 					<li><a href="{:U('Web/navigation_list')}" title="导航设置" <?php if(ACTION_NAME == 'navigation_list')echo 'style="color: #148cf1;"'?>>导航设置</a></li>
-					<li><a href="{:U('Web/shuffling_list')}" title="导航设置" <?php if(ACTION_NAME == 'shuffling_list')echo 'style="color: #148cf1;"'?>>轮播管理</a></li>
+					<li><a href="{:U('Web/shuffling_list')}" title="轮播管理" <?php if(ACTION_NAME == 'shuffling_list')echo 'style="color: #148cf1;"'?>>轮播管理</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -25,7 +25,7 @@
 			<dd <?php if (CONTROLLER_NAME == 'User'){echo 'style="display:block"';}?>>
 				<ul>
 					<li><a href="{:U('User/User_list')}" title="会员列表" <?php if(ACTION_NAME == 'user_list')echo 'style="color: #148cf1;"'?>>会员列表</a></li>
-					<li><a href="{:U('User/audit_list')}" title="会员列表" <?php if(ACTION_NAME == 'audit_list')echo 'style="color: #148cf1;"'?>>审核记录</a></li>
+					<li><a href="{:U('User/audit_list')}" title="审核记录" <?php if(ACTION_NAME == 'audit_list')echo 'style="color: #148cf1;"'?>>审核记录</a></li>
 				</ul>
 			</dd>
 		</dl>
