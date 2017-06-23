@@ -9,6 +9,10 @@ class IndexController extends CommonController {
      public function _initialize()
     {   
         if (is_mobile()) redirect('/Mobile/index');
+        if (!cookie('uname') && session('user') && session('seller')){
+            $uname = session('user')['nickname'] ? session('user')['nickname'] : session('seller')['seller_name'];
+            cookie('uname',$uname);
+        }
         $this->footer = M('article_cat','','DB_CONFIG2')->where(array('parent_id'=>0,'show_in_nav'=>1))->order('sort_order')->limit(5)->select();
         foreach($this->footer as $vv){
             $res[] = M('article','','DB_CONFIG2')->where(array('cat_id'=>$vv['cat_id'],'is_open'=>1))->select();
