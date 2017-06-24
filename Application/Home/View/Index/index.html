@@ -128,34 +128,18 @@
 				<div class="mx-bugs_bunny">
 					<!-- Slider -->
 					<div class="ZI-slider">
-						<div>
-							<foreach name="shuffling2" item="vv" key="kk">
-							<php>if ($kk < 3){</php>
-							<a <?php if($vv['is_new_open'])echo 'target="_blank"';?> href="{$vv.url}"><img src="{:editorimg($vv[img],180,90);}" alt="" /></a>
-							<php>}</php>
+							<foreach name="shuffling2" item="v">
+							<div>
+							<foreach name="v" item="vv" key="kk">
+								<a <?php if($vv['is_new_open'])echo 'target="_blank"';?> href="{$vv.url}"><img src="{:editorimg($vv[img],180,90);}" alt="" /></a>
 							</foreach>
-						</div>
-						<div>
-							<foreach name="shuffling2" item="vo" key="ko">
-							<php>if ($ko < 6 && $ko >2){</php>
-							<a <?php if($vo['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{:editorimg($vo[img],180,90);}" alt="" /></a>
-							<php>}</php>
-							</foreach>									
-						</div>
-						<div>
-							<foreach name="shuffling2" item="vs" key="ks">
-							<php>if ($ks < 9 && $ks > 5){</php>
-							<a <?php if($vs['is_new_open'])echo 'target="_blank"';?> href="{$vo.url}"><img src="{:editorimg($vs[img],180,90);}" alt="" /></a>
-							<php>}</php>
+							</div>
 							</foreach>
-						</div>
 					</div>
 					<!-- Slider -->
 				</div>
 				<!-- My box for the slider -->
-
 			</div>
-
 		</div>
 		<div class="cl"></div>
 	</div>

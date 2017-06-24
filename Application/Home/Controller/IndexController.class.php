@@ -35,8 +35,15 @@ class IndexController extends CommonController {
         $shuffling = M('shuffling')->where(array('is_show'=>1,'pid'=>1))->select();
         $shuffling2 = M('shuffling')->where(array('is_show'=>1,'pid'=>6))->select();
         $store_cate = M('store_class','','DB_CONFIG2')->select();
+        // dump($shuffling2);exit;
+        $n = 0;
+        for($i = 0;$i < count($shuffling2);$i++){
+            if($i % 3 == 0){$n++;}
+            $data[$n][$i] = $shuffling2[$i];
+        }
+
         $this->assign('shuffling',$shuffling);
-        $this->assign('shuffling2',$shuffling2);
+        $this->assign('shuffling2',$data);
         $this->assign('navigation',$navigation);
         $this->assign('store_cate',$store_cate);
         $this->display();
