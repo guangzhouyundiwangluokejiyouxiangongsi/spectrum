@@ -118,17 +118,12 @@
 				</div>
 				<div id="baikemainlfour">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司荣誉</h3>
-					<div class="baikemainlfour1">
-						{$company['com_honor']}
-					</div>
-					<div class="baikemainlfour2">
-						<!-- <a href="#"><img src="__PUBLIC__/ydhome/images/baikemainlfour222.png"></a> -->
-					</div>		
-					<div class="cl"></div>	
+						<p>{$company['com_honor']}
+						</p>
 				</div>
 				<div id="baikemainlfive">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司文化</h3>
-						{$company['com_culture']}
+						<p>{$company['com_culture']}</p>
 				</div>
 				<div id="baikemainlsex">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">官网直达</h3>
@@ -147,12 +142,9 @@
 				</div>
 
 			</div>
-
-
-
 			<div class="baikemainr">
 				<div class="baikemainrm" id="boxss" style="display:none">
-					<a href="javascript:" class="baikemainlone">公司介绍</a>
+					<a href="javascript:" class="baikemainlone ">公司介绍</a>
 					<a href="javascript:" class="baikemainltwo">发展历程</a>
 					<a href="javascript:" class="baikemainlthree">公司业务</a>
 					<a href="javascript:" class="baikemainlfour">公司荣誉</a>
@@ -160,6 +152,7 @@
 					<a href="javascript:" class="baikemainlsex">官网直达</a>
 					<a href="javascript:" class="baikemainlsenve">媒体报道</a>
 				</div>
+				
 				<script type="text/javascript">
 						$(function(){
 
@@ -195,52 +188,21 @@
 
 		// @ 给窗口加滚动条事件
 		$(window).scroll(function(){
-			// 获得窗口滚动上去的距离
-			var ling = $(document).scrollTop();
-
-			
-			var bodyHei=$('.bodyHei').height();
-			var windowHei=$(window).height(); 
-			var footerHei=$('footer.footer').height();
-			var footer_padT= parseInt($('footer.footer').css('paddingTop') );
-			var maxFooterHei=bodyHei-windowHei-footerHei-footer_padT;
-			
-			// 在标题栏显示滚动的距离
-			// document.title = ling;
-			// 如果滚动距离大于400的时候让滚动框出来
-			if(ling>400){
-				$('#boxss').show();
-				console.log(ling)
-			}
-			if(455<ling && ling<900){
-				// 让第一层的数字隐藏，文字显示，让其他兄弟元素的li数字显示，文字隐藏
-				$('#boxss').removeClass('baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm');
-
-			}else if(900<ling && ling<1395){
-				$('#boxss').removeClass('baikemainrm baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm1');
-			}else if(1395<ling && ling<2313){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm2');
-			}else if(2313<ling && ling<2413){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm3');
-			}else if(2413<ling && ling<2453){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');
-			}else if(2413<ling && ling<2523){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm6').addClass('baikemainrm5');
-			}else if(2665<ling && ling<2765){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5').addClass('baikemainrm6');
-			}else if(2547==ling){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm3');				
-			}else if(2781==ling){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');				
-			}else if(2785==ling){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm5 baikemainrm6').addClass('baikemainrm4');				
-			}else if(2955==ling){
-				$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm6').addClass('baikemainrm5');				
-			}
-			if(ling>maxFooterHei || ling<420){
-				// $('#box').css('display','none');  // @ 这一句和下一句效果一样。
-				$('#boxss').hide();
-			}
+    		var sTop = $(window).scrollTop();//获取滚动条离顶部的高度
+    		var obj = $('.baikemainl div');
+    		for(var i = 0;i<obj.length;i++){
+    			var offset = obj.eq(i).offset();
+				if(sTop - offset.top >= 0 && sTop - offset.top < obj.eq(i).height()){
+					// $('#boxss a').css('color','#000');
+					// $('.'+obj.eq(i).attr('id')).css('color','#f00');
+					$('#boxss').show();
+					var n = (i > 0)?i:'';
+					$('#boxss').removeClass('baikemainrm baikemainrm1 baikemainrm2 baikemainrm3 baikemainrm4 baikemainrm5 baikemainrm6').addClass('baikemainrm'+n);
+				}
+				
+    		}
+    		if(sTop <= 666){$('#boxss').hide();}
+    		if(sTop >= ($(document).height() - window.innerHeight)){$('#boxss').hide();}
 			
 		})
 			
@@ -252,7 +214,6 @@
 			<div class="cl"></div>
 		</div>	
 	</main>
-
 <include file="Public/footer" />
 </body>
 </html>
