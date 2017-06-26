@@ -105,14 +105,13 @@ function qiehuan(obj,id){
 		vv = 1;
 		obj.src = 'http://spectrum.yundi88.com/Public/img/yes.png';
 	}
-
-	$.post('ajax_is_rec',{'com_is_rec':vv,'com_id':id},function(res){
+	$.post('/Upadmin/User/ajax_is_rec',{'com_is_rec':vv,'com_id':id},function(res){
 		if (!res) alert('修改失败');
 	})
 }
 
 function save_visit(obj,id){
-	$.post('ajax_save',{'com_id':id,'com_visit':obj.value},function(res){
+	$.post('/Upadmin/User/ajax_save',{'com_id':id,'com_visit':obj.value},function(res){
 		if (res){
 			layer.msg('修改成功!',{icon: 1,time:1000});
 		}else{
@@ -121,7 +120,7 @@ function save_visit(obj,id){
 	})
 }
 function save_praise(obj,id){
-	$.post('ajax_save',{'com_id':id,'com_praise':obj.value},function(res){
+	$.post('/Upadmin/User/ajax_save',{'com_id':id,'com_praise':obj.value},function(res){
 		if (res){
 			layer.msg('修改成功!',{icon: 1,time:1000});
 		}else{
