@@ -100,7 +100,7 @@ class MobileController extends Controller {
         $where['session_id'] = $data['session_id'];
         $where['end_time'] = array('gt',time());
         $where['thumb_id'] = $com_id;
-        if (M('thumb')->where($where)->find()) $this->ajaxReturn(array('status'=>-1,'msg'=>'一天只能点赞一次'));
+        if (M('thumb')->where($where)->find()) $this->ajaxReturn(array('status'=>-1,'msg'=>'一天只能点赞一次哦！'));
         if (!$com_id) $this->ajaxReturn(array('status'=>-1,'msg'=>'该公司不存在'));
         $company_info = M('company_info')->where(array('com_id'=>$com_id))->find();
         $company_info['com_praise'] = $company_info['com_praise']+1;
