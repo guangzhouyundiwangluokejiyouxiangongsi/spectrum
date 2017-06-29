@@ -33,7 +33,11 @@ class CompanyInfoModel extends Model
          $store_info = $this->where(array('com_is_rec'=>1,'com_status'=>1))->page($_GET['p'].', 8')->select();
          //遍历更新数据
          foreach ($store_info as $key => &$value) {
-                $value['com_synopsis'] = mb_substr(strip_tags($value['com_synopsis']),0,60);
+                // $value['com_synopsis'] = mb_substr(strip_tags($value['com_synopsis']),0,60);
+                preg_match_all("/[\x{4e00}-\x{9fa5}]+/u", $value['com_synopsis'], $chinese);
+
+                $value['com_synopsis'] = mb_substr(implode('',$chinese[0]),0,60);
+
                 // if(mb_strlen($value['com_synopsis'],'utf-8')>39) $value['com_synopsis'] .= '...';
                 $value['img_id'] = M('image')->where(array('img_storeid'=>$value['com_storeid']))->getField('img_id');
          }
@@ -104,7 +108,8 @@ class CompanyInfoModel extends Model
         $company['com_honor'] = $this->href_img($company['com_honor'],$com_id);
         $company['com_culture'] = $this->href_img($company['com_culture'],$com_id);
         // 过滤公司简介的图片
-        $company['com_synopsiss'] =  mb_substr(strip_tags($company['com_synopsis']),0,200);
+        preg_match_all("/[\x{4e00}-\x{9fa5}]+/u", $company['com_synopsis'], $chinese);
+        $company['com_synopsiss'] =  mb_substr(strip_tags(implode('',$chinese[0])),0,200);
         if(mb_strlen($company['com_synopsiss'],'utf-8')>199) $company['com_synopsiss'] .= '...';
         /*$company['com_synopsiss'] =  preg_replace("/<img.*?>/si","",$company['com_synopsis']);*/
         //查询媒体
