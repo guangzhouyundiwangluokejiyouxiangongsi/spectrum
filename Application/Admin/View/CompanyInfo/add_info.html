@@ -271,7 +271,7 @@
                             <div class='ypfutext'>
                             
                                          <div class="col-lg-12" style="z-index: 10">
-                                            <textarea name="com_synopsis" id="myEditor1">{$company['com_synopsis']}</textarea>  
+                                            <textarea name="com_synopsis" id="myEditor1">{:htmlspecialchars($company['com_synopsis'])}</textarea>  
                                             <script type="text/javascript"> 
                                             var editor1 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
                                                 editor1.render("myEditor1");
@@ -288,7 +288,7 @@
                             <div class='ypfutext'>
                                  <!-- 发展历程 -->
                                     <div class="col-lg-12" style="z-index: 10">
-                                            <textarea name="com_history" id="myEditor2">{$company['com_history']}</textarea>  
+                                            <textarea name="com_history" id="myEditor2">{:htmlspecialchars($company['com_history'])}</textarea>  
                                             <script type="text/javascript"> 
                                             var editor2 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
                                                 editor2.render("myEditor2");
@@ -307,7 +307,7 @@
                             <div class='ypfutext'>
                                  <!-- 公司业务 -->
                                                 <div class="col-lg-12" style="z-index: 10">
-                                                        <textarea name="com_service" id="myEditor3">{$company['com_service']}</textarea>  
+                                                        <textarea name="com_service" id="myEditor3">{:htmlspecialchars($company['com_service'])}</textarea>  
                                                         <script type="text/javascript"> 
                                                         var editor3 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
                                                             editor3.render("myEditor3");
@@ -324,7 +324,7 @@
                             <h4>公司荣誉</h4>
                             <div class='ypfutext'>
                                 <div class="col-lg-12" style="z-index: 10">
-                                                      <textarea name="com_honor" id="myEditor4" >{$company['com_honor']}</textarea>  
+                                                      <textarea name="com_honor" id="myEditor4" >{:htmlspecialchars($company['com_honor'])}</textarea>  
                                                         <script type="text/javascript"> 
                                                           var editor4 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
                                                             editor4.render("myEditor4");
@@ -340,7 +340,7 @@
                             <h4>公司文化</h4>
                             <div class='ypfutext'>
                                 <div class="col-lg-12" style="z-index: 10">
-                                                      <textarea name="com_culture" id="myEditor5" >{$company['com_culture']}</textarea>  
+                                                      <textarea name="com_culture" id="myEditor5" >{:htmlspecialchars($company['com_culture'])}</textarea>  
                                                         <script type="text/javascript"> 
                                                           var editor5 = new UE.ui.Editor({initialFrameHeight:355,initialFrameWidth:1450});
                                                             editor5.render("myEditor5");
