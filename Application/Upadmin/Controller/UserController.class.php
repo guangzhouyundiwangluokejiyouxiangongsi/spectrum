@@ -22,7 +22,7 @@ class UserController extends CommonController {
    {    
         $status = I('status');
         $count = M('company_info')->where(array('com_status'=>$status))->count();
-        $p = getpage($count,100);
+        $p = getpage($count,10);
         $company_list = M('company_info')->where(array('com_status'=>$status))->field('com_id,com_storeid,com_url,com_name,com_province,com_city,com_district,com_detailed,com_visit,com_praise,com_time,com_is_rec,com_status')->limit($p->firstRow, $p->listRows)->select();
         $array = array('未审核','审核通过','审核未通过');
         foreach($company_list as &$vv){
