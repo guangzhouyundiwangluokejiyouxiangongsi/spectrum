@@ -3,7 +3,7 @@
 		            <a target="_blank" href="/CompanyInfo/details?id={$com.com_id}">
 		                <img src="{:tempimg($com['img_id'],370,200)}" >
 		                <h4>{$com['com_name']}</h4>
-		                <p>{$com['com_synopsis']}</p>
+		                <p>{:strip_tags($com['com_synopsis'])}</p>
 		            </a>
 		        </div>
 		        </foreach>

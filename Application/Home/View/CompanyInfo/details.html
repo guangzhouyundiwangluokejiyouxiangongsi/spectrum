@@ -34,9 +34,9 @@
 					<div class="bannerl1"><img src="{:templogo($company['com_storeid'],250,250)}"></div>
 					<div class="bannerl2">
 						<h3>公司简介</h3>
-						<p class="bannerl2p">{$company['com_synopsiss']}</p>
+						<p class="bannerl2p">{:strip_tags($company['com_synopsiss'])}</p>
 						<h3>主营产品</h3>
-						<p class="bannerl2p">{:$company['com_scname']}</p>
+						<p class="bannerl2p">{$company['com_scname']}</p>
 						<h3>公司地址</h3>
 						<p>{$company['com_province']}{$company['com_city']}{$company['com_district']}{$company['com_detailed']}</p>
 						<h3>公司网址</h3>
@@ -108,24 +108,24 @@
 			<div class="baikemainl">
 				<div id="baikemainlone">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司介绍</h3>
-					<p>{$company['com_synopsis']}</p>
+					<p>{:htmlspecialchars_decode$company['com_synopsis'])}</p>
 				</div>
 				<div id="baikemainltwo">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">发展历程</h3>
-					<p>{$company['com_history']}</p>
+					<p>{:htmlspecialchars_decode$company['com_history'])}</p>
 				</div>
 				<div id="baikemainlthree">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司业务</h3>
-					<p>{$company['com_service']}</p>
+					<p>{:htmlspecialchars_decode$company['com_service'])}</p>
 				</div>
 				<div id="baikemainlfour">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司荣誉</h3>
-						<p>{$company['com_honor']}
+						<p>{:htmlspecialchars_decode$company['com_honor'])}
 						</p>
 				</div>
 				<div id="baikemainlfive">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">公司文化</h3>
-						<p>{$company['com_culture']}</p>
+						<p>{:htmlspecialchars_decode$company['com_culture'])}</p>
 				</div>
 				<div id="baikemainlsex">
 					<h3><img src="__PUBLIC__/ydhome/images/shuxian.png" style="float:left;margin-right: 10px;margin-top: 5px;">官网直达</h3>
