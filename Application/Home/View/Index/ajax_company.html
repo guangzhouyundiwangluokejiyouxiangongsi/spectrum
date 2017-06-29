@@ -3,7 +3,10 @@
 		            <a target="_blank" href="/CompanyInfo/details?id={$com.com_id}">
 		                <img src="{:tempimg($com['img_id'],370,200)}" >
 		                <h4>{$com['com_name']}</h4>
-		                <p>{:strip_tags($com['com_synopsis'])}</p>
+		                <p><?php
+						preg_match_all("/[\x{4e00}-\x{9fa5}]+/u", $company['com_synopsiss'], $chinese);
+						echo implode('',$chinese[0])
+						?></p>
 		            </a>
 		        </div>
 		        </foreach>
