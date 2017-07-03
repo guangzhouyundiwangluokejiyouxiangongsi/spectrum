@@ -145,6 +145,7 @@ class CompanyInfoModel extends Model
         $company['com_service'] = $this->img_all($company['com_service'],'公司业务');
         $company['com_honor'] = $this->img_all($company['com_honor'],'公司荣誉');
         $company['com_culture'] = $this->img_all($company['com_culture'],'公司文化');
+        $array[] = ['img'=>$company['com_logo'],'img_cat'=>'公司logo'];
         foreach ($company['com_synopsis'] as $val) {
             $array[] = $val;
         }
@@ -165,11 +166,15 @@ class CompanyInfoModel extends Model
         }
         foreach ($array as $key=>$val){
             if ($val['img'] == $img){
-                $arr = $array[0];
-                $array[0] = $array[$key];
-                $array[$key] = $arr;
+                array_unshift($array,$array[$key]);
+                unset($array[$key+1]);
             }
         }
+        $photo = M('image')->field('img_title,img_path')->where(array('img_storeid'=>$company['com_storeid']))->select();
+        foreach($photo as $vv){
+            $array[] = ['img'=>$vv['img_path'],'img_cat'=>$vv['img_title'] ]; 
+        }
+        $array = array_values($array);
         return $array;
     }
 
